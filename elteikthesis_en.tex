@@ -1,0 +1,152 @@
+\documentclass[
+	%parspace, % Add vertical space between paragraphs
+	%noindent, % No indentation of first lines in each paragraph
+	%nohyp, % No hyphenation of words
+	%twoside, % Double sided format
+	%draft, % Quicker draft compilation without rendering images
+	%final, % Set final to hide todos
+]{elteikthesis}[2024/04/26]
+
+% The minted package is also supported for source highlighting
+% See elteikthesis_minted.tex for example
+%\usepackage[newfloat]{minted}
+
+% Document's metadata
+\title{Myocardial Perfusion Imaging using Vision Transformers} % title
+\date{2025} % year of defense
+
+% Author's metadata
+\author{Haris Ali}
+\degree{Computer Science MSc}
+
+% Superivsor(s)' metadata
+\supervisor{Szűcs, Ádám István} % internal supervisor's name
+\affiliation{PhD Candidate} % internal supervisor's affiliation
+%\extsupervisor{Jane Doe} % external supervisor's name
+%\extaffiliation{Senior Developer} % external supervisor's affiliation
+
+% University's metadata
+\university{Eötvös Loránd University} % university's name
+\faculty{Faculty of Informatics} % faculty's name
+\department{Dept. of Artificial Intelligence.} % department's name
+\city{Budapest} % city
+\logo{elte_cimer_szines} % logo
+
+% Add bibliography file
+\addbibresource{elteikthesis.bib}
+
+% The document
+\begin{document}
+
+% Set document language
+%\documentlang{hungarian}
+\documentlang{english}
+
+% List of todos (not in the final document)
+%\listoftodos[\todolabel]
+
+% Title page (mandatory)
+\maketitle
+% Topic declaration page (mandatory) - can also be attached instead
+%\includepdf{topicdeclaration.pdf}
+
+\chapter*{Declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+
+I hereby declare that this thesis titled “Myocardial Perfusion Imaging with Vision Transformers” and the work presented in it is my own original research. I confirm that:
+
+\begin{itemize}
+    \item This work was done wholly or mainly while in candidature for a research degree at Eötvös Loránd University.
+    \item Where I have consulted the published work of others, this is always clearly attributed.
+    \item Where I have quoted from the work of others, the source is always given.
+    \item I have acknowledged all main sources of help.
+    \item This thesis has not been submitted for any other degree or professional qualification.
+\end{itemize}
+
+\vspace{1cm}
+\noindent
+Signed: Haris Ali \\
+\vspace{0.2cm}
+Date: 13th April, 2025
+
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+I would like to express my sincere gratitude to my supervisor, \textbf{Szűcs, Ádám István}, for his continous support and guidance throughout this research. His expertise were extremely valuable for the development of the project and reach it to completion.
+
+I am also thankful to the faculty and staff of the Department of Computer Science at Eötvös Loránd University, whose valuable support were crucial for the carrying out of the research.
+
+Lastly, I appreciate the open-source community and all the developers whose tools and libraries played a significant role in the implementation of this project.
+
+\vspace{0.5cm}
+\noindent
+Thank you all.
+
+\cleardoublepage
+
+% Table of contents (mandatory)
+\tableofcontents
+\cleardoublepage
+
+% Main content
+% Abstract (mandatory)
+\input{samples_en/abs.tex}
+\cleardoublepage
+
+\input{samples_en/intro.tex}
+\cleardoublepage
+
+\input{samples_en/user.tex}
+\cleardoublepage
+
+\input{samples_en/impl.tex}
+\cleardoublepage
+
+\input{samples_en/sum.tex}
+\cleardoublepage
+
+% Acknowledgements (optional) - in case your thesis received funding or would like to express special thanks to someone
+\chapter*{\acklabel}
+\addcontentsline{toc}{chapter}{\acklabel}
+In case your thesis received financial support from a project or the university, it is usually required to indicate the proper attribution in the thesis itself. Special thanks can also be expressed towards teachers, fellow students and colleagues who helped you in the process of creating your thesis.
+
+% Appendices (optional) - useful for detailed information in long tables, many and/or large figures, etc.
+\appendix
+\input{samples_en/sim.tex}
+\cleardoublepage
+
+% Bibliography (mandatory)
+\phantomsection
+\addcontentsline{toc}{chapter}{\biblabel}
+\printbibliography[title=\biblabel]
+\cleardoublepage
+
+% List of figures (optional) - useful over 3-5 figures
+\phantomsection
+\addcontentsline{toc}{chapter}{\lstfigurelabel}
+\listoffigures
+\cleardoublepage
+
+% List of tables (optional) - useful over 3-5 tables
+\phantomsection
+\addcontentsline{toc}{chapter}{\lsttablelabel}
+\listoftables
+\cleardoublepage
+
+% List of algorithms (optional) - useful over 3-5 algorithms
+\phantomsection
+\addcontentsline{toc}{chapter}{\lstalgorithmlabel}
+\listofalgorithms
+\cleardoublepage
+
+% List of codes (optional) - useful over 3-5 code samples
+\phantomsection
+\addcontentsline{toc}{chapter}{\lstcodelabel}
+\lstlistoflistings
+\cleardoublepage
+
+% List of symbols (optional)
+%\printnomenclature
+
+\end{document}
