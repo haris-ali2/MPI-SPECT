@@ -1,0 +1,18 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'elteikthesis_en.blg'
+[128] biber:340> INFO - === Mon Apr 14, 2025, 03:28:41
+[149] Biber.pm:419> INFO - Reading 'elteikthesis_en.bcf'
+[238] Biber.pm:979> INFO - Found 10 citekeys in bib section 0
+[255] Biber.pm:4419> INFO - Processing section 0
+[271] Biber.pm:4610> INFO - Looking for bibtex file 'elteikthesis.bib' for section 0
+[273] bibtex.pm:1713> INFO - LaTeX decoding ...
+[304] bibtex.pm:1519> INFO - Found BibTeX data source 'elteikthesis.bib'
+[544] UCollate.pm:68> INFO - Overriding locale 'hungarian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[544] UCollate.pm:68> INFO - Overriding locale 'hungarian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[544] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'hungarian'
+[544] Biber.pm:4245> INFO - No sort tailoring available for locale 'hungarian'
+[561] bbl.pm:660> INFO - Writing 'elteikthesis_en.bbl' with encoding 'UTF-8'
+[574] bbl.pm:763> INFO - Output to elteikthesis_en.bbl
+[574] Biber.pm:131> WARN - ISBN '1071-3581' in entry 'Garcia2007' is invalid - run biber with '--validate_datamodel' for details.
+[574] Biber.pm:131> WARN - ISBN '1532-6551 (Electronic)$\backslash$r1071-3581 (Linking)' in entry 'Ficaro2007' is invalid - run biber with '--validate_datamodel' for details.
+[574] Biber.pm:133> INFO - WARNINGS: 2

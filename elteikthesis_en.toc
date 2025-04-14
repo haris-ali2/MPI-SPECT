@@ -2,25 +2,25 @@
 \select@language {english} \contentsline {chapter}{Acknowledgements}{2}{chapter*.2}%
 \select@language {english} \contentsline {chapter}{Abstract}{3}{chapter*.3}%
 \select@language {english} \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
-\select@language {english} \contentsline {chapter}{\numberline {2}User documentation}{5}{chapter.2}%
-\select@language {english} \contentsline {section}{\numberline {2.1}Enumerations and lists}{5}{section.2.1}%
-\select@language {english} \contentsline {subsection}{\numberline {2.1.1}Lists with narrow spacing inbetween items}{6}{subsection.2.1.1}%
-\select@language {english} \contentsline {section}{\numberline {2.2}Images and figures}{7}{section.2.2}%
-\select@language {english} \contentsline {subsection}{\numberline {2.2.1}Framing figures}{7}{subsection.2.2.1}%
-\select@language {english} \contentsline {subsection}{\numberline {2.2.2}Subfigures}{8}{subsection.2.2.2}%
-\select@language {english} \contentsline {section}{\numberline {2.3}Tables}{9}{section.2.3}%
-\select@language {english} \contentsline {subsection}{\numberline {2.3.1}Multi rows and multi columns}{9}{subsection.2.3.1}%
-\select@language {english} \contentsline {subsection}{\numberline {2.3.2}Long tables over multiple pages}{9}{subsection.2.3.2}%
-\select@language {english} \contentsline {chapter}{\numberline {3}Developer documentation}{12}{chapter.3}%
-\select@language {english} \contentsline {section}{\numberline {3.1}Theorem-like environments}{12}{section.3.1}%
-\select@language {english} \contentsline {subsection}{\numberline {3.1.1}Equations, formulas}{13}{subsection.3.1.1}%
-\select@language {english} \contentsline {section}{\numberline {3.2}Source code samples}{14}{section.3.2}%
-\select@language {english} \contentsline {subsection}{\numberline {3.2.1}Algorithms}{15}{subsection.3.2.1}%
-\select@language {english} \contentsline {chapter}{\numberline {4}Conclusion}{16}{chapter.4}%
-\select@language {english} \contentsline {chapter}{Acknowledgements}{17}{chapter*.9}%
-\select@language {english} \contentsline {chapter}{\numberline {A}Simulation results}{18}{appendix.A}%
-\select@language {english} \contentsline {chapter}{Bibliography}{20}{section*.10}%
-\select@language {english} \contentsline {chapter}{List of Figures}{21}{section*.12}%
-\select@language {english} \contentsline {chapter}{List of Tables}{22}{section*.13}%
-\select@language {english} \contentsline {chapter}{List of Algorithms}{23}{section*.14}%
-\select@language {english} \contentsline {chapter}{List of Codes}{24}{section*.16}%
+\select@language {english} \contentsline {chapter}{\numberline {2}User documentation}{7}{chapter.2}%
+\select@language {english} \contentsline {section}{\numberline {2.1}Enumerations and lists}{7}{section.2.1}%
+\select@language {english} \contentsline {subsection}{\numberline {2.1.1}Lists with narrow spacing inbetween items}{8}{subsection.2.1.1}%
+\select@language {english} \contentsline {section}{\numberline {2.2}Images and figures}{9}{section.2.2}%
+\select@language {english} \contentsline {subsection}{\numberline {2.2.1}Framing figures}{9}{subsection.2.2.1}%
+\select@language {english} \contentsline {subsection}{\numberline {2.2.2}Subfigures}{10}{subsection.2.2.2}%
+\select@language {english} \contentsline {section}{\numberline {2.3}Tables}{11}{section.2.3}%
+\select@language {english} \contentsline {subsection}{\numberline {2.3.1}Multi rows and multi columns}{11}{subsection.2.3.1}%
+\select@language {english} \contentsline {subsection}{\numberline {2.3.2}Long tables over multiple pages}{11}{subsection.2.3.2}%
+\select@language {english} \contentsline {chapter}{\numberline {3}Developer documentation}{14}{chapter.3}%
+\select@language {english} \contentsline {section}{\numberline {3.1}Theorem-like environments}{14}{section.3.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.1.1}Equations, formulas}{15}{subsection.3.1.1}%
+\select@language {english} \contentsline {section}{\numberline {3.2}Source code samples}{16}{section.3.2}%
+\select@language {english} \contentsline {subsection}{\numberline {3.2.1}Algorithms}{17}{subsection.3.2.1}%
+\select@language {english} \contentsline {chapter}{\numberline {4}Conclusion}{18}{chapter.4}%
+\select@language {english} \contentsline {chapter}{Acknowledgements}{19}{chapter*.9}%
+\select@language {english} \contentsline {chapter}{\numberline {A}Simulation results}{20}{appendix.A}%
+\select@language {english} \contentsline {chapter}{Bibliography}{22}{section*.10}%
+\select@language {english} \contentsline {chapter}{List of Figures}{24}{section*.12}%
+\select@language {english} \contentsline {chapter}{List of Tables}{25}{section*.13}%
+\select@language {english} \contentsline {chapter}{List of Algorithms}{26}{section*.14}%
+\select@language {english} \contentsline {chapter}{List of Codes}{27}{section*.16}%

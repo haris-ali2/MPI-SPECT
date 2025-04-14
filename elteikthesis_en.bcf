@@ -2361,11 +2361,16 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">elteikthesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">dahl1972structured</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">cormen2009algorithms</bcf:citekey>
-    <bcf:citekey order="2" intorder="2">krasner1988mvc</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">dijkstra1979goto</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">dijkstra1979goto</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">10.1001/jamacardio.2017.2471</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">SLOMKA2012338</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Garcia2007</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Liu2007</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Ficaro2007</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">tolu2025advancements</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">henzlova2011future</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">xie2023transformer</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">xie2024generalizable</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">chen2024dudocfnet</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

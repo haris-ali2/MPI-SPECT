@@ -19,176 +19,642 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{dahl1972structured}{book}{}
-      \name{editor}{3}{}{%
-        {{hash=9f2e6a37c98cf7a4efd4ae06f1af5388}{%
-           family={Dahl},
+    \entry{10.1001/jamacardio.2017.2471}{article}{}
+      \name{author}{23}{}{%
+        {{hash=1d8d2336ee9d64255fc42cb231554df4}{%
+           family={Danad},
            familyi={D\bibinitperiod},
-           given={O.\bibnamedelimi J.},
-           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=fa6182769b69c9f7b1559f8430d88929}{%
-           family={Dijkstra},
+           given={Ibrahim},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b8dfeaa983b2f1ae4ceddab53081529b}{%
+           family={Raijmakers},
+           familyi={R\bibinitperiod},
+           given={Pieter\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=f9c38b99de9f12d759a268db8a2dcee2}{%
+           family={Driessen},
            familyi={D\bibinitperiod},
-           given={E.\bibnamedelimi W.},
-           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=d6facc8397f631d3ef01dd70be993640}{%
-           family={Hoare},
+           given={Roel\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ade984aab8572efd9e16726ab0a70c34}{%
+           family={Leipsic},
+           familyi={L\bibinitperiod},
+           given={Jonathon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7054cbf286ad2938baccf1f48557f34e}{%
+           family={Raju},
+           familyi={R\bibinitperiod},
+           given={Rekha},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a6cb72f51f90f5314a5c9222857cc535}{%
+           family={Naoum},
+           familyi={N\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1549aa30bf5cf397e8cb0d91d49ca098}{%
+           family={Knuuti},
+           familyi={K\bibinitperiod},
+           given={Juhani},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4f29450d3dfdef8f8083b239af7aaba9}{%
+           family={Mäki},
+           familyi={M\bibinitperiod},
+           given={Maija},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d957cdef785dea11241f7c032648f753}{%
+           family={Underwood},
+           familyi={U\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b7c94e129eacf8947fdbce44378d5253}{%
+           family={Min},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=6b462ef3dc5713d10ef2db106ed68d2a}{%
+           family={Elmore},
+           familyi={E\bibinitperiod},
+           given={Kimberly},
+           giveni={K\bibinitperiod}}}%
+        {{hash=64a97ad0b3156f3a19ccb2f5bf0f9f9a}{%
+           family={Stuijfzand},
+           familyi={S\bibinitperiod},
+           given={Wynand\bibnamedelima J.},
+           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c0b91b1b3652ada10340f27ad36f0534}{%
+           family={Royen},
+           familyi={R\bibinitperiod},
+           given={Niels},
+           giveni={N\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=f36bbc9ab225b2e3d63d8a38b60c40d1}{%
+           family={Tulevski},
+           familyi={T\bibinitperiod},
+           given={Igor\bibnamedelima I.},
+           giveni={I\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=aa8c304476710d8c882d2387cbf56ec6}{%
+           family={Somsen},
+           familyi={S\bibinitperiod},
+           given={Aernout\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=6005a894cdffd0137d72e0b17e3a3bce}{%
+           family={Huisman},
            familyi={H\bibinitperiod},
-           given={C.\bibnamedelimi A.\bibnamedelimi R.},
-           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+           given={Marc\bibnamedelima C.},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f8238165346b20b74835f883e509f577}{%
+           family={Lingen},
+           familyi={L\bibinitperiod},
+           given={Arthur\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=11a5758c95f83a88ff995181976eaeb1}{%
+           family={Heymans},
+           familyi={H\bibinitperiod},
+           given={Martijn\bibnamedelima W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c4ec1141d4864e2aea89c101b9bd6a95}{%
+           family={Ven},
+           familyi={V\bibinitperiod},
+           given={Peter\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={van\bibnamedelima de},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=b9d4ef58f97b37cec9e2d86fb39c8cd8}{%
+           family={Kuijk},
+           familyi={K\bibinitperiod},
+           given={Cornelis},
+           giveni={C\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=c710ce69980147467b6ba8d16e4d9a9a}{%
+           family={Lammertsma},
+           familyi={L\bibinitperiod},
+           given={Adriaan\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=52154b8da7d85af91c3749cfd1bdacbb}{%
+           family={Rossum},
+           familyi={R\bibinitperiod},
+           given={Albert\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=2110de1ed595bf6fb5eba670d328563b}{%
+           family={Knaapen},
+           familyi={K\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {London, UK, UK}%
-      }
-      \list{publisher}{1}{%
-        {Academic Press Ltd.}%
-      }
-      \strng{namehash}{d14201a161f761867a42838210589d99}
-      \strng{fullhash}{d14201a161f761867a42838210589d99}
-      \strng{bibnamehash}{d14201a161f761867a42838210589d99}
-      \strng{editorbibnamehash}{d14201a161f761867a42838210589d99}
-      \strng{editornamehash}{d14201a161f761867a42838210589d99}
-      \strng{editorfullhash}{d14201a161f761867a42838210589d99}
+      \strng{namehash}{67521e6a43f5b8d86f7f82fe86885a0e}
+      \strng{fullhash}{64ff193a9930b4eb8122a218141975c1}
+      \strng{bibnamehash}{67521e6a43f5b8d86f7f82fe86885a0e}
+      \strng{authorbibnamehash}{67521e6a43f5b8d86f7f82fe86885a0e}
+      \strng{authornamehash}{67521e6a43f5b8d86f7f82fe86885a0e}
+      \strng{authorfullhash}{64ff193a9930b4eb8122a218141975c1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{isbn}{0-12-200550-3}
-      \field{title}{Structured Programming}
-      \field{year}{1972}
-    \endentry
-    \entry{cormen2009algorithms}{book}{}
-      \name{author}{4}{}{%
-        {{hash=835b8c52757d98c15859b416316d9820}{%
-           family={Cormen},
-           familyi={C\bibinitperiod},
-           given={Thomas\bibnamedelima H.},
-           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=a389dea91a76366c4b4af5f52a928a76}{%
-           family={Leiserson},
-           familyi={L\bibinitperiod},
-           given={Charles\bibnamedelima E.},
-           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=3a964821f97ee17f8bb285bc61c52899}{%
-           family={Rivest},
-           familyi={R\bibinitperiod},
-           given={Ronald\bibnamedelima L.},
-           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=bc78426660400760f77758aec45e71a8}{%
-           family={Stein},
-           familyi={S\bibinitperiod},
-           given={Clifford},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {The MIT Press}%
-      }
-      \strng{namehash}{c251cdfd036d9474565c517e73c19c5d}
-      \strng{fullhash}{10f004e08c7c03d98be0da1231a869ce}
-      \strng{bibnamehash}{c251cdfd036d9474565c517e73c19c5d}
-      \strng{authorbibnamehash}{c251cdfd036d9474565c517e73c19c5d}
-      \strng{authornamehash}{c251cdfd036d9474565c517e73c19c5d}
-      \strng{authorfullhash}{10f004e08c7c03d98be0da1231a869ce}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{3rd}
-      \field{isbn}{978-0-262-53305-8}
-      \field{title}{Introduction to Algorithms, Third Edition}
-      \field{year}{2009}
-    \endentry
-    \entry{krasner1988mvc}{article}{}
-      \name{author}{2}{}{%
-        {{hash=9bfbfad21c965b54d0802df075d65b20}{%
-           family={Krasner},
-           familyi={K\bibinitperiod},
-           given={Glenn\bibnamedelima E.},
-           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=e607b1001c34ae04a5ded9806b457bd1}{%
-           family={Pope},
-           familyi={P\bibinitperiod},
-           given={Stephen\bibnamedelima T.},
-           giveni={S\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Denville, NJ, USA}%
-      }
-      \list{publisher}{1}{%
-        {SIGS Publications}%
-      }
-      \strng{namehash}{10a70c3fe8bcda7adb6ee36438ee004c}
-      \strng{fullhash}{10a70c3fe8bcda7adb6ee36438ee004c}
-      \strng{bibnamehash}{10a70c3fe8bcda7adb6ee36438ee004c}
-      \strng{authorbibnamehash}{10a70c3fe8bcda7adb6ee36438ee004c}
-      \strng{authornamehash}{10a70c3fe8bcda7adb6ee36438ee004c}
-      \strng{authorfullhash}{10a70c3fe8bcda7adb6ee36438ee004c}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{0896-8438}
-      \field{journaltitle}{J. Object Oriented Program.}
-      \field{month}{8}
-      \field{number}{3}
-      \field{title}{A Cookbook for Using the Model-View-Controller User Interface Paradigm in Smalltalk-80}
-      \field{volume}{1}
-      \field{year}{1988}
-      \field{pages}{26\bibrangedash 49}
-      \range{pages}{24}
+      \field{abstract}{At present, the choice of noninvasive testing for a diagnosis of significant coronary artery disease (CAD) is ambiguous, but nuclear myocardial perfusion imaging with single-photon emission tomography (SPECT) or positron emission tomography (PET) and coronary computed tomography angiography (CCTA) is predominantly used for this purpose. However, to date, prospective head-to-head studies are lacking regarding the diagnostic accuracy of these imaging modalities. Furthermore, the combination of anatomical and functional assessments configuring a hybrid approach may yield improved accuracy.To establish the diagnostic accuracy of CCTA, SPECT, and PET and explore the incremental value of hybrid imaging compared with fractional flow reserve.A prospective clinical study involving 208 patients with suspected CAD who underwent CCTA, technetium 99m/tetrofosmin–labeled SPECT, and [15O]H2O PET with examination of all coronary arteries by fractional flow reserve was performed from January 23, 2012, to October 25, 2014. Scans were interpreted by core laboratories on an intention-to-diagnose basis. Hybrid images were generated in case of abnormal noninvasive anatomical or functional test results. Hemodynamically significant stenosis in at least 1 coronary artery as indicated by a fractional flow reserve of 0.80 or less and relative diagnostic accuracy of SPECT, PET, and CCTA in detecting hemodynamically significant CAD.Of the 208 patients in the study (76 women and 132 men; mean [SD] age, 58 [9] years), 92 (44.2\%) had significant CAD (fractional flow reserve ≤0.80). Sensitivity was 90\% (95\% CI, 82\%-95\%) for CCTA, 57\% (95\% CI, 46\%-67\%) for SPECT, and 87\% (95\% CI, 78\%-93\%) for PET, whereas specificity was 60\% (95\% CI, 51\%-69\%) for CCTA, 94\% (95\% CI, 88\%-98\%) for SPECT, and 84\% (95\% CI, 75\%-89\%) for PET. Single-photon emission tomography was found to be noninferior to PET in terms of specificity (P \&lt; .001) but not in terms of sensitivity (P \&gt; .99) using the predefined absolute margin of 10\%. Diagnostic accuracy was highest for PET (85\%; 95\% CI, 80\%-90\%) compared with that of CCTA (74\%; 95\% CI, 67\%-79\%; P = .003) and SPECT (77\%; 95\% CI, 71\%-83\%; P = .02). Diagnostic accuracy was not enhanced by either hybrid SPECT and CCTA (76\%; 95\% CI, 70\%-82\%; P = .75) or by PET and CCTA (84\%; 95\% CI, 79\%-89\%; P = .82), but resulted in an increase in specificity (P = .004) at the cost of a decrease in sensitivity (P = .001).This controlled clinical head-to-head comparative study revealed PET to exhibit the highest accuracy for diagnosis of myocardial ischemia. Furthermore, a combined anatomical and functional assessment does not add incremental diagnostic value but guides clinical decision-making in an unsalutary fashion.}
+      \field{issn}{2380-6583}
+      \field{journaltitle}{JAMA Cardiology}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{Comparison of Coronary CT Angiography, SPECT, PET, and Hybrid Imaging for Diagnosis of Ischemic Heart Disease Determined by Fractional Flow Reserve}
+      \field{volume}{2}
+      \field{year}{2017}
+      \field{pages}{1100\bibrangedash 1107}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1001/jamacardio.2017.2471
+      \endverb
+      \verb{eprint}
+      \verb https://jamanetwork.com/journals/jamacardiology/articlepdf/2648688/jamacardiology\_danad\_2017\_oi\_170038.pdf
+      \endverb
       \verb{urlraw}
-      \verb http://dl.acm.org/citation.cfm?id=50757.50759
+      \verb https://doi.org/10.1001/jamacardio.2017.2471
       \endverb
       \verb{url}
-      \verb http://dl.acm.org/citation.cfm?id=50757.50759
+      \verb https://doi.org/10.1001/jamacardio.2017.2471
       \endverb
     \endentry
-    \entry{dijkstra1979goto}{incollection}{}
-      \name{author}{1}{}{%
-        {{hash=e142555b26f584f4133d5434621d3ce4}{%
-           family={Dijkstra},
-           familyi={D\bibinitperiod},
-           given={E.},
-           giveni={E\bibinitperiod}}}%
+    \entry{SLOMKA2012338}{article}{}
+      \name{author}{4}{}{%
+        {{hash=dc102aad7e015660784eee77da52b71a}{%
+           family={Slomka},
+           familyi={S\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2b5ca9a9f6dd75082dccee92a3741a29}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=4db18eabed3553d93a2bbafa0ea5bede}{%
+           family={Berman},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=00b9610909950a68fe72e52f6a90c4c1}{%
+           family={Germano},
+           familyi={G\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
       }
-      \name{editor}{1}{}{%
-        {{hash=09c9954c326cb92f0e99e45b743f9fb4}{%
-           family={Yourdon},
-           familyi={Y\bibinitperiod},
-           given={Edward\bibnamedelima Nash},
-           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      \strng{namehash}{48dd6813fed914bf3ecfce3aee745a73}
+      \strng{fullhash}{9123b68313213c0adafdda40f2e235bb}
+      \strng{bibnamehash}{48dd6813fed914bf3ecfce3aee745a73}
+      \strng{authorbibnamehash}{48dd6813fed914bf3ecfce3aee745a73}
+      \strng{authornamehash}{48dd6813fed914bf3ecfce3aee745a73}
+      \strng{authorfullhash}{9123b68313213c0adafdda40f2e235bb}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1071-3581}
+      \field{journaltitle}{Journal of Nuclear Cardiology}
+      \field{number}{2}
+      \field{title}{Quantitative analysis of perfusion studies: Strengths and pitfalls}
+      \field{volume}{19}
+      \field{year}{2012}
+      \field{pages}{338\bibrangedash 346}
+      \range{pages}{9}
+      \verb{doi}
+      \verb https://doi.org/10.1007/s12350-011-9509-2
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1071358123030908
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1071358123030908
+      \endverb
+      \keyw{Myocardial Perfusion SPECT,Transient Ischemic Dilation,Total Perfusion Deficit,Perfusion Score,Defect Extent}
+    \endentry
+    \entry{Garcia2007}{article}{}
+      \name{author}{6}{}{%
+        {{hash=965ae8502b6d1fa6b6db180e11309ac8}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Ernest\bibnamedelima V.},
+           giveni={E\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=0260da0fd215723d3d844cbfe993d668}{%
+           family={Faber},
+           familyi={F\bibinitperiod},
+           given={Tracy\bibnamedelima L.},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=8e2359280bc399a51212607c5e705eef}{%
+           family={Cooke},
+           familyi={C\bibinitperiod},
+           given={C.\bibnamedelimi David},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=15207c4d99023f8260bcb731037d5861}{%
+           family={Folks},
+           familyi={F\bibinitperiod},
+           given={Russell\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=0cbbd844cf964ec53dd1d8ab9d697e8d}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ji},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9c83d74cc7dc08f223998857d30b6714}{%
+           family={Santana},
+           familyi={S\bibinitperiod},
+           given={Cesar},
+           giveni={C\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {Upper Saddle River, NJ, USA}%
-      }
-      \list{publisher}{1}{%
-        {Yourdon Press}%
-      }
-      \strng{namehash}{e142555b26f584f4133d5434621d3ce4}
-      \strng{fullhash}{e142555b26f584f4133d5434621d3ce4}
-      \strng{bibnamehash}{e142555b26f584f4133d5434621d3ce4}
-      \strng{authorbibnamehash}{e142555b26f584f4133d5434621d3ce4}
-      \strng{authornamehash}{e142555b26f584f4133d5434621d3ce4}
-      \strng{authorfullhash}{e142555b26f584f4133d5434621d3ce4}
-      \strng{editorbibnamehash}{09c9954c326cb92f0e99e45b743f9fb4}
-      \strng{editornamehash}{09c9954c326cb92f0e99e45b743f9fb4}
-      \strng{editorfullhash}{09c9954c326cb92f0e99e45b743f9fb4}
+      \strng{namehash}{357380368ba2dbb921d129ccaa4296d9}
+      \strng{fullhash}{21682a9074e4e1c3507981bb594d9b8d}
+      \strng{bibnamehash}{357380368ba2dbb921d129ccaa4296d9}
+      \strng{authorbibnamehash}{357380368ba2dbb921d129ccaa4296d9}
+      \strng{authornamehash}{357380368ba2dbb921d129ccaa4296d9}
+      \strng{authorfullhash}{21682a9074e4e1c3507981bb594d9b8d}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{chapter}{Go to Statement Considered Harmful}
-      \field{isbn}{0-917072-14-6}
-      \field{title}{Classics in Software Engineering}
-      \field{year}{1979}
-      \field{pages}{27\bibrangedash 33}
-      \range{pages}{7}
-      \verb{urlraw}
-      \verb http://dl.acm.org/citation.cfm?id=1241515.1241518
+      \field{abstract}{Single photon emission computed tomography (SPECT) myocardial perfusion imaging has attained widespread clinical acceptance as a standard of care for patients with known or suspected coronary artery disease. A significant contribution to this success has been the use of computer techniques to provide objective quantitative assessment in interpreting these studies. We have implemented the Emory Cardiac Toolbox (ECTb) as a pipeline to distribute the software tools that we and others have researched, developed, and validated to be clinically useful so that diagnosticians everywhere can benefit from our work. Our experience has demonstrated that integration of all software tools in a common platform is the optimal approach to promote both accuracy and efficiency. Important attributes of the ECTb approach are (1) our extensive number of normal perfusion databases for SPECT and positron emission tomography (PET) studies, each created with at least 150 patients; (2) our use of Fourier analysis of regional thickening to ensure proper temporal resolution and to allow accurate measurement of left ventricular function and dyssynchrony; (3) our development of PET tools to quantify myocardial hibernation and viability; (4) our development of 3-dimensional displays and the use of these displays as a platform for image fusion of perfusion and computed tomography angiography; and (5) the use of expert systems for decision support. ECTb is an important tool for extracting quantitative parameters from all types of cardiac radionuclide distributions. ECTb should continue to play an important role in establishing cardiac SPECT and PET for flow, function, metabolism, and innervation clinical applications. {©} 2007 American Society of Nuclear Cardiology.}
+      \field{isbn}{1071-3581}
+      \field{issn}{10713581}
+      \field{journaltitle}{Journal of Nuclear Cardiology}
+      \field{number}{4 SPEC. ISS.}
+      \field{title}{{The increasing role of quantification in clinical nuclear cardiology: The Emory approach}}
+      \field{volume}{14}
+      \field{year}{2007}
+      \field{pages}{420\bibrangedash 432}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.nuclcard.2007.06.009
       \endverb
-      \verb{url}
-      \verb http://dl.acm.org/citation.cfm?id=1241515.1241518
+      \verb{file}
+      \verb :C$\backslash$:/Users/SzucsAdam/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Garcia et al. - 2007 - The increasing role of quantification in clinical nuclear cardiology The Emory approach.pdf:pdf
       \endverb
+    \endentry
+    \entry{Liu2007}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6fcbf641f9bb8e4b4137a69946552812}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yi\bibnamedelima Hwa},
+           giveni={Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{6fcbf641f9bb8e4b4137a69946552812}
+      \strng{fullhash}{6fcbf641f9bb8e4b4137a69946552812}
+      \strng{bibnamehash}{6fcbf641f9bb8e4b4137a69946552812}
+      \strng{authorbibnamehash}{6fcbf641f9bb8e4b4137a69946552812}
+      \strng{authornamehash}{6fcbf641f9bb8e4b4137a69946552812}
+      \strng{authorfullhash}{6fcbf641f9bb8e4b4137a69946552812}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{10713581}
+      \field{journaltitle}{Journal of Nuclear Cardiology}
+      \field{number}{4 SPEC. ISS.}
+      \field{title}{{Quantification of nuclear cardiac images: The Yale approach}}
+      \field{volume}{14}
+      \field{year}{2007}
+      \field{pages}{483\bibrangedash 491}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.nuclcard.2007.06.005
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/SzucsAdam/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Liu - 2007 - Quantification of nuclear cardiac images The Yale approach.pdf:pdf
+      \endverb
+    \endentry
+    \entry{Ficaro2007}{article}{}
+      \name{author}{4}{}{%
+        {{hash=55401c2e5a75dc0940fed49c419730fd}{%
+           family={Ficaro},
+           familyi={F\bibinitperiod},
+           given={Edward\bibnamedelima P.},
+           giveni={E\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=89c91ff27756fdb6f820035268878671}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Benjamin\bibnamedelima C.},
+           giveni={B\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=1c71c685e793fc9b14f6bb6bd9d0c4d9}{%
+           family={Kritzman},
+           familyi={K\bibinitperiod},
+           given={James\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=f196bba7e0718ff6dbeb3ef332d262d3}{%
+           family={Corbett},
+           familyi={C\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{480592cec4714f1dbd9d26c323be9497}
+      \strng{fullhash}{1ff34ace5d0df85927b587fbfa3b2372}
+      \strng{bibnamehash}{480592cec4714f1dbd9d26c323be9497}
+      \strng{authorbibnamehash}{480592cec4714f1dbd9d26c323be9497}
+      \strng{authornamehash}{480592cec4714f1dbd9d26c323be9497}
+      \strng{authorfullhash}{1ff34ace5d0df85927b587fbfa3b2372}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Quantitative software for the analysis and review of myocardial perfusion emission computed tomography images is an indispensable tool in the nuclear physician's evaluation of patients with known or suspected heart disease. The Corridor4DM (4DM) application (formerly known as 4DM-SPECT), developed at the University of Michigan Medical Center, is a quantitative software application providing automated processing, analysis, and reporting of myocardial perfusion and function from cardiac emission computed tomography studies in a tightly integrated, user-centered environment. With health care placing increased emphasis on higher quality and efficiency in diagnostic imaging, quantitative analysis and review software applications need to provide a comprehensive environment supporting correlative review of multimodality images, integrated report generation, and remote review capabilities. The current and future design capabilities of the 4DM software application are discussed with respect to the changing landscape of imaging, where cardiac computed tomography, positron emission tomography, structured reporting, and remote review are expanding the base requirement specifications for quantitative software. {©} 2007 American Society of Nuclear Cardiology.}
+      \field{isbn}{1532-6551 (Electronic)$\backslash$r1071-3581 (Linking)}
+      \field{issn}{10713581}
+      \field{journaltitle}{Journal of Nuclear Cardiology}
+      \field{number}{4 SPEC. ISS.}
+      \field{title}{{Corridor4DM: The Michigan method for quantitative nuclear cardiology}}
+      \field{volume}{14}
+      \field{year}{2007}
+      \field{pages}{455\bibrangedash 465}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.nuclcard.2007.06.006
+      \endverb
+      \verb{file}
+      \verb :C$\backslash$:/Users/SzucsAdam/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Ficaro et al. - 2007 - Corridor4DM The Michigan method for quantitative nuclear cardiology.pdf:pdf
+      \endverb
+    \endentry
+    \entry{tolu2025advancements}{article}{}
+      \name{author}{5}{}{%
+        {{hash=1f86dff2e0a4194fbfaa9b86f61e78d4}{%
+           family={Tolu-Akinnawo},
+           familyi={T\bibinithyphendelim A\bibinitperiod},
+           given={Oluwaremilekun\bibnamedelima Zeth},
+           giveni={O\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=c943d888e4814533c015be9f729d639c}{%
+           family={Ezekwueme},
+           familyi={E\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f07191d05e8184ce2bf9440af3fdeb5e}{%
+           family={Omolayo},
+           familyi={O\bibinitperiod},
+           given={Olukunle},
+           giveni={O\bibinitperiod}}}%
+        {{hash=3a1c558e8aa6e3baf6d12d6a520f6991}{%
+           family={Batheja},
+           familyi={B\bibinitperiod},
+           given={Sasha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fce6abf0915d8d63596d166a8531fdda}{%
+           family={Awoyemi},
+           familyi={A\bibinitperiod},
+           given={Toluwalase},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{ba0223e8652508c23bf264310a9e9efb}
+      \strng{fullhash}{41276aaaf0341b622125509633e352b7}
+      \strng{bibnamehash}{ba0223e8652508c23bf264310a9e9efb}
+      \strng{authorbibnamehash}{ba0223e8652508c23bf264310a9e9efb}
+      \strng{authornamehash}{ba0223e8652508c23bf264310a9e9efb}
+      \strng{authorfullhash}{41276aaaf0341b622125509633e352b7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Clinical Cardiology}
+      \field{number}{1}
+      \field{title}{Advancements in Artificial Intelligence in Noninvasive Cardiac Imaging: A Comprehensive Review}
+      \field{volume}{48}
+      \field{year}{2025}
+      \field{pages}{e70087}
+      \range{pages}{-1}
+    \endentry
+    \entry{henzlova2011future}{article}{}
+      \name{author}{2}{}{%
+        {{hash=e363f389e6715d87e8a067dfa3509e9f}{%
+           family={Henzlova},
+           familyi={H\bibinitperiod},
+           given={Milena\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=65da81243d019fa0be2d5c70687b7827}{%
+           family={Duvall},
+           familyi={D\bibinitperiod},
+           given={W\bibnamedelima Lane},
+           giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ad85f174a210c042f0d8688c61e1e7aa}
+      \strng{fullhash}{ad85f174a210c042f0d8688c61e1e7aa}
+      \strng{bibnamehash}{ad85f174a210c042f0d8688c61e1e7aa}
+      \strng{authorbibnamehash}{ad85f174a210c042f0d8688c61e1e7aa}
+      \strng{authornamehash}{ad85f174a210c042f0d8688c61e1e7aa}
+      \strng{authorfullhash}{ad85f174a210c042f0d8688c61e1e7aa}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of nuclear cardiology}
+      \field{number}{4}
+      \field{title}{The future of SPECT MPI: time and dose reduction}
+      \field{volume}{18}
+      \field{year}{2011}
+      \field{pages}{580\bibrangedash 587}
+      \range{pages}{8}
+    \endentry
+    \entry{xie2023transformer}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=823993f82fafd29169eae17226b58bea}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Huidong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=78b85e16af77a1b542f32ece926f004b}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a1539ff1ba1511f10cb7531890b31deb}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiongchao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=3b35d12d9c9255d9b84e7730bfe445da}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Xueqi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=abc5a354881fadb8e10ecd3342d9b34d}{%
+           family={Thorn},
+           familyi={T\bibinitperiod},
+           given={Stephanie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=043d946dc215dc70ad07344bc63a31ff}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yi-Hwa},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=3798e0c49b710b5e279a3eb38ba1b7fe}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ge},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4cb20d0e941164fd0bed750d63d7801f}{%
+           family={Sinusas},
+           familyi={S\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=abb53a8ec83554494fdbae8b87e58afd}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chi},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ff98afd313ca177cc0754e53ac407652}
+      \strng{fullhash}{6df9ab41b85b7d02cb572b60f5b3ae4c}
+      \strng{bibnamehash}{ff98afd313ca177cc0754e53ac407652}
+      \strng{authorbibnamehash}{ff98afd313ca177cc0754e53ac407652}
+      \strng{authornamehash}{ff98afd313ca177cc0754e53ac407652}
+      \strng{authorfullhash}{6df9ab41b85b7d02cb572b60f5b3ae4c}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Medical Image Computing and Computer-Assisted Intervention}
+      \field{title}{Transformer-Based Dual-Domain Network for Few-View Dedicated Cardiac SPECT Image Reconstructions}
+      \field{year}{2023}
+      \field{pages}{163\bibrangedash 172}
+      \range{pages}{10}
+    \endentry
+    \entry{xie2024generalizable}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=823993f82fafd29169eae17226b58bea}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Huidong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f43a1fd73894b4a3329879efa51bd437}{%
+           family={Gan},
+           familyi={G\bibinitperiod},
+           given={Weijie},
+           giveni={W\bibinitperiod}}}%
+        {{hash=c1447b3ead7fa8f45ce1170480e4a4a2}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=a1539ff1ba1511f10cb7531890b31deb}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiongchao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=2afd74840b92b1c12b15b4e2e178033b}{%
+           family={Alashi},
+           familyi={A\bibinitperiod},
+           given={Alaa},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cad082249fd5602b783a63b4bc971aa3}{%
+           family={Thorn},
+           familyi={T\bibinitperiod},
+           given={Stephanie\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=78b85e16af77a1b542f32ece926f004b}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4ebb868814c9b4eca9fb91c200fa6984}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qiong},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=392e6a5f6a045cb23399a2ed15a2865e}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Menghua},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3b35d12d9c9255d9b84e7730bfe445da}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Xueqi},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff98afd313ca177cc0754e53ac407652}
+      \strng{fullhash}{37aca0bfb9ab5b265f0d607adee9566a}
+      \strng{bibnamehash}{ff98afd313ca177cc0754e53ac407652}
+      \strng{authorbibnamehash}{ff98afd313ca177cc0754e53ac407652}
+      \strng{authornamehash}{ff98afd313ca177cc0754e53ac407652}
+      \strng{authorfullhash}{37aca0bfb9ab5b265f0d607adee9566a}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2412.16573}
+      \field{title}{A Generalizable 3D Diffusion Framework for Low-Dose and Few-View Cardiac SPECT}
+      \field{year}{2024}
+    \endentry
+    \entry{chen2024dudocfnet}{article}{}
+      \name{author}{8}{}{%
+        {{hash=a1539ff1ba1511f10cb7531890b31deb}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiongchao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=78b85e16af77a1b542f32ece926f004b}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3b35d12d9c9255d9b84e7730bfe445da}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Xueqi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=823993f82fafd29169eae17226b58bea}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Huidong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4ebb868814c9b4eca9fb91c200fa6984}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Qiong},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=3abcfdeb1c243a3001f4f457389e7c36}{%
+           family={Duncan},
+           familyi={D\bibinitperiod},
+           given={James\bibnamedelima S},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=fd8bcda0891a66ac5d696218b38bd0d6}{%
+           family={Sinusas},
+           familyi={S\bibinitperiod},
+           given={Albert\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=abb53a8ec83554494fdbae8b87e58afd}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Chi},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{6571c6993861d83bf3dba4e2711a2cff}
+      \strng{fullhash}{d82e83e84d12ff383709b76d38202ac9}
+      \strng{bibnamehash}{6571c6993861d83bf3dba4e2711a2cff}
+      \strng{authorbibnamehash}{6571c6993861d83bf3dba4e2711a2cff}
+      \strng{authornamehash}{6571c6993861d83bf3dba4e2711a2cff}
+      \strng{authorfullhash}{d82e83e84d12ff383709b76d38202ac9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on medical imaging}
+      \field{title}{DuDoCFNet: Dual-Domain Coarse-to-Fine Progressive Network for Simultaneous Denoising, Limited-View Reconstruction, and attenuation correction of Cardiac SPECT}
+      \field{year}{2024}
     \endentry
   \enddatalist
 \endrefsection
