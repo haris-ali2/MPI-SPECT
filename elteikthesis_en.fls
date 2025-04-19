@@ -515,6 +515,9 @@ INPUT samples_en/abs.tex
 INPUT ./samples_en/intro.tex
 INPUT ./samples_en/intro.tex
 INPUT samples_en/intro.tex
+INPUT ./samples_en/related.tex
+INPUT ./samples_en/related.tex
+INPUT samples_en/related.tex
 INPUT ./samples_en/user.tex
 INPUT ./samples_en/user.tex
 INPUT samples_en/user.tex

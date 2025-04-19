@@ -1428,6 +1428,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{abstract}{Background: The performance of left ventricular (LV) functional assessment using gated myocardial perfusion SPECT (MPS) relies on the accuracy of segmentation. Current methods require manual adjustments that are tedious and subjective. We propose a novel machine-learning-based method to automatically segment LV myocardium and measure its volume in gated MPS imaging without human intervention. Methods: We used an end-to-end fully convolutional neural network to segment LV myocardium by delineating its endocardial and epicardial surface. A novel compound loss function, which encourages similarity and penalizes discrepancy between prediction and training dataset, is utilized in training stage to achieve excellent performance. We retrospectively investigated 32 normal patients and 24 abnormal patients, whose LV myocardial contours automatically segmented by our method were compared with those delineated by physicians as the ground truth. Results: The results of our method demonstrated very good agreement with the ground truth. The average DSC metrics and Hausdorff distance of the contours delineated by our method are larger than 0.900 and less than 1 cm, respectively, among all 32 + 24 patients of all phases. The correlation coefficient of the LV myocardium volume between ground truth and our results is 0.910 ± 0.061 (P < 0.001), and the mean relative error of LV myocardium volume is − 1.09 ± 3.66{\%}. Conclusion: These results strongly indicate the feasibility of our method in accurately quantifying LV myocardium volume change over the cardiac cycle. The learning-based segmentation method in gated MPS imaging has great promise for clinical use.}
       \field{issn}{15326551}
       \field{issue}{3}
       \field{journaltitle}{Journal of Nuclear Cardiology}
@@ -1748,6 +1749,7 @@
       \verb{doi}
       \verb 10.1109/3DV.2016.79
       \endverb
+      \keyw{Image segmentation;Feature extraction;Biomedical imaging;Three-dimensional displays;Neural networks;Magnetic resonance imaging;Two dimensional displays;Deep learning;segmentation;prostate;machine learning;convolutional neural networks}
     \endentry
     \entry{ZHANG2023107267}{article}{}
       \name{author}{8}{}{%
@@ -1802,6 +1804,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{abstract}{Objectives We aimed to propose an automatic segmentation method for left ventricular (LV) from 16 electrocardiogram (ECG) -gated 13N-NH3 PET/CT myocardial perfusion imaging (MPI) to improve the performance of LV function assessment. Methods Ninety-six cases with confirmed or suspected obstructive coronary artery disease (CAD) were enrolled in this research. The LV myocardial contours were delineated by physicians as ground truth. We developed an automatic segmentation method, which introduces the self-attention mechanism into 3D U-Net to capture global information of images so as to achieve fine segmentation of LV. Three cross-validation tests were performed on each gate (64 vs. 32 for training vs. validation). The effectiveness was validated by quantitative metrics (modified hausdorff distance, MHD; dice ratio, DR; 3D MHD) as well as cardiac functional parameters (end-systolic volume, ESV; end-diastolic volume, EDV; ejection fraction, EF). Furthermore, the feasibility of the proposed method was also evaluated by intra- and inter-observers with DR and 3D-MHD. Results Compared with backbone network, the proposed approach improved the average DR from 0.905 ± 0.0193 to 0.9202 ± 0.0164, and decreased the average 3D MHD from 0.4611 ± 0.0349 to 0.4304 ± 0.0339. The average relative error of LV volume between proposed method and ground truth is 1.09±3.66%, and the correlation coefficient is 0.992 ± 0.007 (P < 0.001). The EDV, ESV, EF deduced from the proposed approach were highly correlated with ground truth (r ≥ 0.864, P < 0.001), and the correlation with commercial software is fair (r ≥ 0.871, P < 0.001). DR and 3D MHD of contours and myocardium from two observers are higher than 0.899 and less than 0.5194. Conclusion The proposed approach is highly feasible for automatic segmentation of the LV cavity and myocardium, with potential to benefit the precision of LV function assessment.}
       \field{issn}{0169-2607}
       \field{journaltitle}{Computer Methods and Programs in Biomedicine}
       \field{title}{An automatic segmentation method with self-attention mechanism on left ventricle in gated PET/CT myocardial perfusion imaging}

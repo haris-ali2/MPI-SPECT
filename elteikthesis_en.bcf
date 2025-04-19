@@ -2371,6 +2371,27 @@
     <bcf:citekey order="8" intorder="1">xie2023transformer</bcf:citekey>
     <bcf:citekey order="9" intorder="1">xie2024generalizable</bcf:citekey>
     <bcf:citekey order="10" intorder="1">chen2024dudocfnet</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">zhou2023nnformer</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">FICARO2007455</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">GARCIA2007420</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">GERMANO2007433</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">LIU2007483</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">DBLP:journals/cars/HosntalabMMA12</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">10.1007/11866565_12</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Yang2006ACC</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">https://doi.org/10.1049/iet-cvi.2012.0081</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">8409947</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">7123558</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Betancur2017</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">ARABI2021122</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">WOLTERINK2020988</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Wang2020</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">WEN2021166842</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">RFB15a</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">tang2017dynamic</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">zhao2023spatial</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">7785132</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">ZHANG2023107267</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
