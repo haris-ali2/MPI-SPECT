@@ -1820,6 +1820,102 @@
       \endverb
       \keyw{N-NH PET/CT,Coronary artery disease,Automatic segmentation,Self-attention mechanism,LV function assessment}
     \endentry
+    \entry{ZHU2023106954}{article}{}
+      \name{author}{13}{}{%
+        {{hash=467f233551576dea9840a02f787a10b8}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Fubao},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2ca481f20420d427ddaf59b90c0fc50b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Longxi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f09202d3f76a0433bb253620132cc5e5}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jinyu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=996dee7706b2e1bbd3535f5f442606fc}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=990646f4a94d743ae9cb2b10947c44e2}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Shaojie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c3bfd7281c8aed1de9d3e16f148041bd}{%
+           family={Nan},
+           familyi={N\bibinitperiod},
+           given={Jiaofen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=11f69cac4500dee769f8cca829f210da}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yanting},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a880d5007c08aa232e015b2a05d30cb8}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zhongqiang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=165188672411234b7aadd60fa7547184}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Jianzhou},
+           giveni={J\bibinitperiod}}}%
+        {{hash=431040c22ee1a26a490e815b15e3eb2b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zenghong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6064ced1888733269290dec356216d2d}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Chuang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=13d2c14e9b7ecadbcb18ea75a47122e4}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Zhixin},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a959d47f7d9ac51c39435e8fe19bfdb1}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Weihua},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a0e73c941cfbd3d7515b50a2f8a03c2}
+      \strng{fullhash}{a836cba2fd84f155b1ef61e9058f6ebb}
+      \strng{bibnamehash}{6a0e73c941cfbd3d7515b50a2f8a03c2}
+      \strng{authorbibnamehash}{6a0e73c941cfbd3d7515b50a2f8a03c2}
+      \strng{authornamehash}{6a0e73c941cfbd3d7515b50a2f8a03c2}
+      \strng{authorfullhash}{a836cba2fd84f155b1ef61e9058f6ebb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0010-4825}
+      \field{journaltitle}{Computers in Biology and Medicine}
+      \field{title}{A new method incorporating deep learning with shape priors for left ventricular segmentation in myocardial perfusion SPECT images}
+      \field{volume}{160}
+      \field{year}{2023}
+      \field{pages}{106954}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.compbiomed.2023.106954
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0010482523004195
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0010482523004195
+      \endverb
+      \keyw{Segmentation,Left ventricle,Myocardial perfusion SPECT,Deep learning,V-Net}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
