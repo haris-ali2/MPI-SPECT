@@ -1428,7 +1428,6 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Background: The performance of left ventricular (LV) functional assessment using gated myocardial perfusion SPECT (MPS) relies on the accuracy of segmentation. Current methods require manual adjustments that are tedious and subjective. We propose a novel machine-learning-based method to automatically segment LV myocardium and measure its volume in gated MPS imaging without human intervention. Methods: We used an end-to-end fully convolutional neural network to segment LV myocardium by delineating its endocardial and epicardial surface. A novel compound loss function, which encourages similarity and penalizes discrepancy between prediction and training dataset, is utilized in training stage to achieve excellent performance. We retrospectively investigated 32 normal patients and 24 abnormal patients, whose LV myocardial contours automatically segmented by our method were compared with those delineated by physicians as the ground truth. Results: The results of our method demonstrated very good agreement with the ground truth. The average DSC metrics and Hausdorff distance of the contours delineated by our method are larger than 0.900 and less than 1 cm, respectively, among all 32 + 24 patients of all phases. The correlation coefficient of the LV myocardium volume between ground truth and our results is 0.910 ± 0.061 (P < 0.001), and the mean relative error of LV myocardium volume is − 1.09 ± 3.66{\%}. Conclusion: These results strongly indicate the feasibility of our method in accurately quantifying LV myocardium volume change over the cardiac cycle. The learning-based segmentation method in gated MPS imaging has great promise for clinical use.}
       \field{issn}{15326551}
       \field{issue}{3}
       \field{journaltitle}{Journal of Nuclear Cardiology}
@@ -1749,7 +1748,6 @@
       \verb{doi}
       \verb 10.1109/3DV.2016.79
       \endverb
-      \keyw{Image segmentation;Feature extraction;Biomedical imaging;Three-dimensional displays;Neural networks;Magnetic resonance imaging;Two dimensional displays;Deep learning;segmentation;prostate;machine learning;convolutional neural networks}
     \endentry
     \entry{ZHANG2023107267}{article}{}
       \name{author}{8}{}{%
@@ -1804,7 +1802,6 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Objectives We aimed to propose an automatic segmentation method for left ventricular (LV) from 16 electrocardiogram (ECG) -gated 13N-NH3 PET/CT myocardial perfusion imaging (MPI) to improve the performance of LV function assessment. Methods Ninety-six cases with confirmed or suspected obstructive coronary artery disease (CAD) were enrolled in this research. The LV myocardial contours were delineated by physicians as ground truth. We developed an automatic segmentation method, which introduces the self-attention mechanism into 3D U-Net to capture global information of images so as to achieve fine segmentation of LV. Three cross-validation tests were performed on each gate (64 vs. 32 for training vs. validation). The effectiveness was validated by quantitative metrics (modified hausdorff distance, MHD; dice ratio, DR; 3D MHD) as well as cardiac functional parameters (end-systolic volume, ESV; end-diastolic volume, EDV; ejection fraction, EF). Furthermore, the feasibility of the proposed method was also evaluated by intra- and inter-observers with DR and 3D-MHD. Results Compared with backbone network, the proposed approach improved the average DR from 0.905 ± 0.0193 to 0.9202 ± 0.0164, and decreased the average 3D MHD from 0.4611 ± 0.0349 to 0.4304 ± 0.0339. The average relative error of LV volume between proposed method and ground truth is 1.09±3.66%, and the correlation coefficient is 0.992 ± 0.007 (P < 0.001). The EDV, ESV, EF deduced from the proposed approach were highly correlated with ground truth (r ≥ 0.864, P < 0.001), and the correlation with commercial software is fair (r ≥ 0.871, P < 0.001). DR and 3D MHD of contours and myocardium from two observers are higher than 0.899 and less than 0.5194. Conclusion The proposed approach is highly feasible for automatic segmentation of the LV cavity and myocardium, with potential to benefit the precision of LV function assessment.}
       \field{issn}{0169-2607}
       \field{journaltitle}{Computer Methods and Programs in Biomedicine}
       \field{title}{An automatic segmentation method with self-attention mechanism on left ventricle in gated PET/CT myocardial perfusion imaging}
@@ -1822,6 +1819,230 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0169260722006484
       \endverb
       \keyw{N-NH PET/CT,Coronary artery disease,Automatic segmentation,Self-attention mechanism,LV function assessment}
+    \endentry
+    \entry{ZHU2023106954}{article}{}
+      \name{author}{13}{}{%
+        {{hash=467f233551576dea9840a02f787a10b8}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Fubao},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2ca481f20420d427ddaf59b90c0fc50b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Longxi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f09202d3f76a0433bb253620132cc5e5}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jinyu},
+           giveni={J\bibinitperiod}}}%
+        {{hash=996dee7706b2e1bbd3535f5f442606fc}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Chen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=990646f4a94d743ae9cb2b10947c44e2}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Shaojie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c3bfd7281c8aed1de9d3e16f148041bd}{%
+           family={Nan},
+           familyi={N\bibinitperiod},
+           given={Jiaofen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=11f69cac4500dee769f8cca829f210da}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yanting},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a880d5007c08aa232e015b2a05d30cb8}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Zhongqiang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=165188672411234b7aadd60fa7547184}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Jianzhou},
+           giveni={J\bibinitperiod}}}%
+        {{hash=431040c22ee1a26a490e815b15e3eb2b}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zenghong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6064ced1888733269290dec356216d2d}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Chuang},
+           giveni={C\bibinitperiod}}}%
+        {{hash=13d2c14e9b7ecadbcb18ea75a47122e4}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Zhixin},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a959d47f7d9ac51c39435e8fe19bfdb1}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Weihua},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{6a0e73c941cfbd3d7515b50a2f8a03c2}
+      \strng{fullhash}{a836cba2fd84f155b1ef61e9058f6ebb}
+      \strng{bibnamehash}{6a0e73c941cfbd3d7515b50a2f8a03c2}
+      \strng{authorbibnamehash}{6a0e73c941cfbd3d7515b50a2f8a03c2}
+      \strng{authornamehash}{6a0e73c941cfbd3d7515b50a2f8a03c2}
+      \strng{authorfullhash}{a836cba2fd84f155b1ef61e9058f6ebb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0010-4825}
+      \field{journaltitle}{Computers in Biology and Medicine}
+      \field{title}{A new method incorporating deep learning with shape priors for left ventricular segmentation in myocardial perfusion SPECT images}
+      \field{volume}{160}
+      \field{year}{2023}
+      \field{pages}{106954}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.compbiomed.2023.106954
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0010482523004195
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0010482523004195
+      \endverb
+      \keyw{Segmentation,Left ventricle,Myocardial perfusion SPECT,Deep learning,V-Net}
+    \endentry
+    \entry{10488032}{article}{}
+      \name{author}{8}{}{%
+        {{hash=cba002f712801e77bdd52466d0987d85}{%
+           family={Ni},
+           familyi={N\bibinitperiod},
+           given={Yangfan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b6ed01daf082a9382031df5c08afcc82}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Duo},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d7edb7e6e5f2663a19ad6c050ce67de7}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Gege},
+           giveni={G\bibinitperiod}}}%
+        {{hash=27ce9176fdf1f7f10d71fcff431879d1}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=894318a9fdd7a0ec168c8bef7c7f3d4b}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yuanfeng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f0cb7808c71dec4dcc5eca2a4687db74}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Lijun},
+           giveni={L\bibinitperiod}}}%
+        {{hash=24c4d6871983976da3ab7b2a7ff911d6}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhongke},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=0617a43f5a6cc67950dce84f7ee05b67}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Wentao},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b952b40eb798269e0cb4f68840988ad2}
+      \strng{fullhash}{3243d217bb17eb818a481253714b871f}
+      \strng{bibnamehash}{b952b40eb798269e0cb4f68840988ad2}
+      \strng{authorbibnamehash}{b952b40eb798269e0cb4f68840988ad2}
+      \strng{authornamehash}{b952b40eb798269e0cb4f68840988ad2}
+      \strng{authorfullhash}{3243d217bb17eb818a481253714b871f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Radiation and Plasma Medical Sciences}
+      \field{number}{6}
+      \field{title}{A Multiscale Spatial Transformer U-Net for Simultaneously Automatic Reorientation and Segmentation of 3-D Nuclear Cardiac Images}
+      \field{volume}{8}
+      \field{year}{2024}
+      \field{pages}{632\bibrangedash 645}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TRPMS.2024.3382318
+      \endverb
+      \keyw{Image segmentation;Single photon emission computed tomography;Biomedical imaging;Transformers;Feature extraction;Myocardium;Imaging;Deep learning;myocardial perfusion imaging (MPI);positron emission tomography (PET);single-photon emission computed tomography (SPECT)}
+    \endentry
+    \entry{10.1145/3632047.3632078}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=1167e5451a46a7870d1304e9e6d24386}{%
+           family={Szundefinedcs},
+           familyi={S\bibinitperiod},
+           given={Ádám\bibnamedelima István},
+           giveni={Á\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=d91f8fbdd3b93d39bcf735e08aabce0e}{%
+           family={Horváth},
+           familyi={H\bibinitperiod},
+           given={Kristóf},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9d88873be89459ab8db5027bf94410f4}{%
+           family={Sólyomvári},
+           familyi={S\bibinitperiod},
+           given={Katalin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5fa791d453ccb8d7c836f5156eb4fdde}{%
+           family={Zlehovszky},
+           familyi={Z\bibinitperiod},
+           given={Ádám},
+           giveni={Á\bibinitperiod}}}%
+        {{hash=13800c02074f4afcce0fea0be39d3bee}{%
+           family={Kári},
+           familyi={K\bibinitperiod},
+           given={Béla},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Barcelona, Spain}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{a682dd9d420eb29af6eb8d744fb08f15}
+      \strng{fullhash}{95c5ec41ee0a6fb59d601e7e9bc0763f}
+      \strng{bibnamehash}{a682dd9d420eb29af6eb8d744fb08f15}
+      \strng{authorbibnamehash}{a682dd9d420eb29af6eb8d744fb08f15}
+      \strng{authornamehash}{a682dd9d420eb29af6eb8d744fb08f15}
+      \strng{authorfullhash}{95c5ec41ee0a6fb59d601e7e9bc0763f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Myocardial Perfusion Imaging (MPI) is the golden standard in detecting and assessing Coronary Artery Disease (CAD). Due to its role and incidence in diagnostics, automated and semi-automated solutions are available aiding diagnoses based on the perfusion and function of the left ventricle. Evaluation with Single-Photon Emission Computed Tomography (SPECT) cameras often takes > 30 minutes and due to patient cardinality, shortened acquisition produces images with lower Signal-to-Noise Ratio (SNR), challenging automated solutions. Here a fully automated method is presented, solving the left ventricle (LV) segmentation problem. The method is a 3D U-Net-based, self-supervised learning (SSL) approach, with a rich augmentation pipeline. A brief study is presented where the proposed algorithm is compared to the current state-of-the-art solution in Machine Learning (ML), with the evaluation of various segmentation metrics of the left ventricular muscle tissue. The proposed method showed an effective 89 \% precision on the segmentation task of MPI studies on both simulated and real datasets. In conclusion, the technique can aid the evaluation of MPI studies in clinical environments by automating the segmentation of studies with a high success rate.}
+      \field{booktitle}{Proceedings of the 2023 10th International Conference on Bioinformatics Research and Applications}
+      \field{isbn}{9798400708152}
+      \field{series}{ICBRA '23}
+      \field{title}{Self-supervised segmentation of myocardial perfusion imaging SPECT left ventricles}
+      \field{year}{2024}
+      \field{pages}{206\bibrangedash 211}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/3632047.3632078
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3632047.3632078
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3632047.3632078
+      \endverb
+      \keyw{Myocardial Perfusion Imaging • Single-Photon Emission Computed Tomography • Coronary Artery Disease • Self-Supervised Learning}
     \endentry
   \enddatalist
 \endrefsection

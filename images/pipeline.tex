@@ -1,0 +1,57 @@
+
+\begin{tikzpicture}[
+    node distance=8mm and 0mm,
+    block/.style={draw, fill=blue!10, rounded corners, minimum width=3cm, minimum height=1cm, align=center},
+    arrow/.style={-Stealth, thick},
+    shapenode/.style={ellipse, draw, fill=red!10, minimum width=2cm},
+    legendbox/.style={draw, fill=white, font=\small}
+]
+
+% Input
+\node (input) {\includegraphics[width=1.2cm]{sagittal_input.png}};
+\node[above=1mm of input, font=\footnotesize] {Input SPECT Volume};
+
+% Preprocessing
+\node[block, below=of input] (preprocess) {Preprocessing \\ (Normalization, Denoising)};
+\draw[arrow] (input) -- (preprocess);
+
+% Shape Prior Path
+\node[shapenode, left=of preprocess, xshift=-1cm] (shape) {Statistical Shape Model};
+% \draw[arrow] (shape) -- (priors);
+% \draw[arrow, dashed] (input.west) -- ++(-6cm,0) |-  (shape.north);
+\draw[arrow, dashed] (input.west) -- ++(-6cm,0) coordinate (temp) -- (temp|-shape.north) -- (shape.north);
+
+% Transformer Encoder
+\node[block, below=of preprocess] (encoder) {nnFormer Encoder};
+\draw[arrow] (preprocess) -- (encoder);
+% \draw[arrow, dashed] (shape.east) -- (preprocess.west);
+
+% Fusion
+\node[block, below=of encoder] (fusion) {Feature Fusion \\ (nnFormer Features $\oplus$ Shape Priors)};
+\draw[arrow] (encoder) -- (fusion);
+\draw[arrow] (shape.south) |- ([xshift=-5mm]fusion.west) -- (fusion.west);
+
+% Decoder
+\node[block, below=of fusion] (decoder) {nnFormer Decoder};
+\draw[arrow] (fusion) -- (decoder);
+\draw[arrow, dashed] (encoder.east) -| ++(2cm,0) |- (decoder.east);
+
+% Output
+\node[below=of decoder] (output) {\includegraphics[width=1.2cm]{sagittal_gt.png}};
+\node[below=1mm of output, font=\footnotesize] {LV Segmentation Mask};
+\draw[arrow] (decoder) -- (output);
+
+% Properly positioned legend
+% \node[legendbox] at ([xshift=3cm,yshift=-6cm]current bounding box.west) {
+%     \begin{tabular}{@{}l@{\ }l@{}}
+%         \textcolor{blue}{\rule{5mm}{1mm}} & Main Network Path \\
+%         \textcolor{red}{\rule{5mm}{1mm}} & Shape Prior Components \\
+%         \textcolor{black}{\rule{5mm}{1mm}\textsuperscript{---}} & Skip Connections \\
+%         $\oplus$ & Feature Fusion Operation
+%     \end{tabular}
+% };
+
+% Ensure all content is within bounds
+\useasboundingbox (current bounding box.south west) rectangle ([xshift=6cm]current bounding box.north east);
+
+\end{tikzpicture}
