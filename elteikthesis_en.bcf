@@ -2401,6 +2401,7 @@
     <bcf:citekey order="38" intorder="1">10.1109/TIP.2023.3293771</bcf:citekey>
     <bcf:citekey order="39" intorder="1">Nagy2013</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Hudson1994</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Kingma2015Adam</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

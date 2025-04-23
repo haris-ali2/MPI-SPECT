@@ -7,19 +7,30 @@
 \select@language {english} \contentsline {section}{\numberline {3.1}Overview}{12}{section.3.1}%
 \select@language {english} \contentsline {section}{\numberline {3.2}Data Acquisition and Preprocessing}{14}{section.3.2}%
 \select@language {english} \contentsline {section}{\numberline {3.3}Detailed Description of nnFormer Architecture}{16}{section.3.3}%
-\select@language {english} \contentsline {subsection}{\numberline {3.3.1}Overall Architecture}{16}{subsection.3.3.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.3.1}Overall Architecture}{17}{subsection.3.3.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.2}Encoder}{17}{subsection.3.3.2}%
-\select@language {english} \contentsline {subsection}{\numberline {3.3.3}Bottleneck}{17}{subsection.3.3.3}%
+\select@language {english} \contentsline {subsection}{\numberline {3.3.3}Bottleneck}{18}{subsection.3.3.3}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.4}Decoder}{18}{subsection.3.3.4}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.5}Attention Mechanisms}{18}{subsection.3.3.5}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.6}Integration and Optimization}{19}{subsection.3.3.6}%
-\select@language {english} \contentsline {chapter}{\numberline {4}Methodology}{20}{chapter.4}%
-\select@language {english} \contentsline {section}{\numberline {4.1}Theorem-like environments}{20}{section.4.1}%
-\select@language {english} \contentsline {chapter}{\numberline {5}Conclusion}{21}{chapter.5}%
-\select@language {english} \contentsline {chapter}{Acknowledgements}{22}{chapter*.4}%
-\select@language {english} \contentsline {chapter}{\numberline {A}Simulation results}{23}{appendix.A}%
-\select@language {english} \contentsline {chapter}{Bibliography}{25}{section*.5}%
-\select@language {english} \contentsline {chapter}{List of Figures}{31}{section*.7}%
-\select@language {english} \contentsline {chapter}{List of Tables}{32}{section*.8}%
-\select@language {english} \contentsline {chapter}{List of Algorithms}{33}{section*.9}%
-\select@language {english} \contentsline {chapter}{List of Codes}{34}{section*.11}%
+\select@language {english} \contentsline {section}{\numberline {3.4}Statistical Shape Priors}{20}{section.3.4}%
+\select@language {english} \contentsline {section}{\numberline {3.5}Training and Optimization Procedures}{20}{section.3.5}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.1}Training Dataset and Splits}{20}{subsection.3.5.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.2}Data Augmentation}{20}{subsection.3.5.2}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.3}Loss Function}{20}{subsection.3.5.3}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.4}Optimization Strategy}{21}{subsection.3.5.4}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.5}Evaluation Pipeline}{22}{subsection.3.5.5}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.6}Implementation Environment}{22}{subsection.3.5.6}%
+\select@language {english} \contentsline {section}{\numberline {3.6}Implementation Details and Computational Environment}{22}{section.3.6}%
+\select@language {english} \contentsline {subsection}{\numberline {3.6.1}Software Framework}{22}{subsection.3.6.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.6.2}Hardware Infrastructure}{23}{subsection.3.6.2}%
+\select@language {english} \contentsline {section}{\numberline {3.7}Evaluation Metrics and Experimental Setup}{23}{section.3.7}%
+\select@language {english} \contentsline {subsection}{\numberline {3.7.1}Evaluation Metrics}{23}{subsection.3.7.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.7.2}Experimental Protocols}{24}{subsection.3.7.2}%
+\select@language {english} \contentsline {section}{\numberline {3.8}Summary and Justification of Methodology}{25}{section.3.8}%
+\select@language {english} \contentsline {chapter}{Acknowledgements}{27}{chapter*.4}%
+\select@language {english} \contentsline {chapter}{Bibliography}{27}{section*.5}%
+\select@language {english} \contentsline {chapter}{List of Figures}{34}{section*.7}%
+\select@language {english} \contentsline {chapter}{List of Tables}{35}{section*.8}%
+\select@language {english} \contentsline {chapter}{List of Algorithms}{36}{section*.9}%
+\select@language {english} \contentsline {chapter}{List of Codes}{37}{section*.11}%

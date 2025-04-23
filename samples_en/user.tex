@@ -28,9 +28,9 @@ In a summary, the proposed methodology contibutes to not only a significant adva
 
 \section{Data Acquisition and Preprocessing}
 
-The MPI dataset which is utilized in this research was acquired using SPECT. This acquired dataset consists of volumes from a total of 74 patients, which are carefully selected in order to represent the diverse demographic and the characteristics of the clinic. The popultion of the patients inclued individuals with varying age groups, physiological conditions and gender distributions in order to ensure the relaibility, robustness and generalizability of the model. Multiple different radiotracers were employed in the process of acquiring the MPI SPECT, specifically agents labled by technetium-99m(Tc) such as Tc Tetrofosmin and TC Sestamibi, and also the thallium 201 chloride (T1 Chloride). 
+The MPI dataset which is utilized in this research was acquired using SPECT. This acquired dataset consists of volumes from a total of 80 patients, which are carefully selected in order to represent the diverse demographic and the characteristics of the clinic. The popultion of the patients inclued individuals with varying age groups, physiological conditions and gender distributions in order to ensure the relaibility, robustness and generalizability of the model. Multiple different radiotracers were employed in the process of acquiring the MPI SPECT, specifically agents labled by technetium-99m(Tc) such as Tc Tetrofosmin and TC Sestamibi, and also the thallium 201 chloride (T1 Chloride). Each of these radiotraces offer unique properties in imaging thereby providing a comprehensive coverage of all the possible clinical scenarios which are encountered in everyday diagnostice. 
 
-Each of these radiotraces offer unique properties in imaging thereby providing a comprehensive coverage of all the possible clinical scenarios which are encountered in everyday diagnostice. The dataset was recorded using multiple different collimation methods and also different imaging configurations, including muti-pinhole (MPH), low-energy high-resolution (LEHR), CardioC, CardioD collimators. These various imaging techniues simulate the real-world variability in the clinical practices and pose very distinct challenges for segmentation models because of the variations in spatial resolution, noise characteristics and the sensitivity. Specifically, the dataset consists of 40 patients who are imaged with mixed black-box collimators, 8 patients each images using MPH, CardioC and CardioD, and 10 patients images using LEHR collimators. This comprehensive approach ensures that the data consists of a wide rane of both the quality of the image and also the imaging artifacts which are typically observed in a clincal setting.
+The dataset of the patients used in the research is divided into five distinct groups. \textbf{(A)} The first, and the largest group is a heterogeneous black-box dataset which comprises of patients who are scanned under multiple defferent geometries, pharmaceurical protocals and the settings of the acquisition. This group consisted of 40 individuals, out of which 27 were female and 13 male with an average age of 69.62 years. The average height of the group is 167.25cm while the average weight is 78.11 kgs. \textbf{(B)} The second group consists of 10 patients who are imaged using the most recent MPH collimator configurations,, specifically the APT73 collimators installed on the Mediso AnyScan Trio system. This group consists of 7 females and 3 males with an average age of 68.8 years, an average height of 169 cm, and an average weight of 73.8 kgs. \textbf{(C)} The third group comprises of another 10 patients scanned with the LEHR-HS collimator which is also mounted with a trio camera. Out of these, 8 are female and 2 male with an average age of 68 years, an average height of 176 cm and an average weight of 92 kgs. \textbf{(D)} the fourth group was scanned using the earlier generation imaging hardware, in order to provide a comprehensive basis with the legacy systems. This group included data from 10 patients who are scanned using the Mediso CardioD system in a seated configuration setting. This group consisted of 1 female and 9 male subjects with an average age of 75.6 years, an average height of 151 cm and a mean weight of 71 kgs. \textbf{(E)} The fifth and last group also involved 10 individuals who are imaged with the Mediso CardioC system with subjects positioned supine. This group consists of 7 females and 3 males. The retrospective natur of tis dataset is store in the interfile format due to format limitations and only the average age could be reliably extracted which comes out ot be 70.33 years.
 
 Each of the patient went through very rigorous imaging procedures which are adhering strictly to standard protocals of acquisition in clinics. The patients were administered the mentioned radiopharmaceuticals intravenously which was followed by image acquisition after the standardized waiting period that allows sufficient tracer uptake in the myocardial tissue. The image acquisition protocols were varying based on the collimation method which was emploed. For example imaging with the MPH collimator a very specific step-and-shoot helical trajectories, on the other hand the stationary collimator positions were employed for the other collimators which creates different spatial sampling patterns and different challenges to image reconstruction. AFter the acquisition of the raw data, a number of precprocessing techniques were employed in ordder to prepare the data for the subsequent segmentation analysis. The preprocessing pipeline was developed in order to address a number of inherent issues with the imaging and to optimize the data quality for better segmentation outcomes.
 
@@ -72,3 +72,112 @@ The amalgamation of LV-MSA, GV-MSA and the convolutional operations in the nnFor
 
 
 In conclusion, the nnFormer architecture represents a very sophisticated segmentation framework which is specifically tailored for medical imaging systems. The innovative design of the architecture and the advaned methods of attention overcomes the traditional limiations of segmentation models by effectively using optimization techniques across components ensuring accurate, robust and clinically meaningfull segmentation outputs.
+
+\section{Statistical Shape Priors}
+
+
+\section{Training and Optimization Procedures}
+The training and optimization of the full segmentation framework were specifically designed to ensure the convergence and the generalization capability of the model across varying anatomies of the patients and different imaging conditions. The architecture was implementedd using the PyTorch library and trained on high-performance Nvidia GPUs, leveraging both the nnFormer and the SSP modules.
+
+\subsection{Training Dataset and Splits}
+The training dataset consisted on MPI SPECT scanes from 60 different patients These scans were carefully selected in order to ensure the variability in the type of the tracer used the quality of the image and the features of the anatomy.The validation/testing dataset consisted of 14 different scans from different patients. The stratification ensured proper and proportional representation of the collimtor types and the demograhics of the patients across split.
+
+\subsection{Data Augmentation}
+In order to improve the generalization capability and avoid overfitting to the training data, severl different data augmentation techniques were employed during the training phase. These include: 
+\begin{itemize}
+\item Random rotation \item Spatial padding (To ensure consistent input size) \item Random cropping 
+\end{itemize}
+
+All of the augmentation or transformations were applied in real time using the Monai library in order to maintain anatomical plausibility and preservin the label integrity.
+
+\subsection{Loss Function}
+The loss function that is used in the study is the DiceCELoss known as the Dice cross-entropy loss, which combines the functioning of both the dice coefficient and the cross entropy loss. This formulation focuses on 2 crucial aspects of the medical image segmentation, which are class imbalance and probabilistic boundary confidence.
+
+The dice component of the loss function directly optimizes the function for the overlap the predicted labels and the ground truth which makes it very effective for the datsets that target the structures that occupy a small portion of the volume, which is what exists in myocardial SPECT. Meanwhile the cross-entropy term ensures that the voxel-wise confidence of the classification is properly incorporated, allowing the whole network to learn the fine-grained details and maintain the sharp boundaries needed.
+
+This hybrid loss is proved to be both differentiable and computaitonally efficient, with facilitates stable convergence during the training process. This loss was selected over te traditional single term losses due to the fact that its robustness in handling small, complex anatomical data even in the presence of noise. By relying completely on the the DiceCELoss, the training pipeline remains completely stremlined and very effective, which eliminates the need for additional tuning of the hyperparameters that is associated with the multi-loss formulations.
+
+\subsection{Optimization Strategy}
+Model training used the Adam optimizer \cite{Kingma2015Adam} with the following configuration:
+
+\begin{itemize} \item Initial learning rate: $1 \times 10^{-5}$ \item Learning rate decay: exponential decay with a factor of 0.01 every 10 epochs \item Batch size: 2 volumes per iteration \item Weight decay: $1 \times 10^{-6}$ \item Number of epochs: 100 for nnFormer baseline, 50 for proposed SSP-integrated model \end{itemize}
+
+The best performing model, based on the validation loss, is saved for final testing.
+
+\subsection{Evaluation Pipeline}
+Following the training, model performance was evaluated on the test set. For each volume of the patient, the output of the segmentation is generated in a single forward pass The predictions were post-processed using the morphological operations in order to remove isolated false positives and maintain region continuity. Quantitative metrics such as Dice coefficient, recall, precision, and F1 score were computed.
+
+\subsection{Implementation Environment}
+All of the training and evaluation procedures were conducted in a Linux based environment with CUDA-enabled GPUs. the full code was implemented in Python using PyTorch, with additional support of libraries such as monai, pandas, numpy and matplotlib fro visualisation. The rigorous training and the optimization pipeline ensured the resulting model was both the accurate and very generalizable which is robust against the variability of imaging, and is efficient enough for potential deployement in clinical settings.
+
+\section{Implementation Details and Computational Environment}
+
+In order to ensure the reproducibility,, optimal training efficiency and the scalability the whole segmentation framework was implemented using an extremely module DL environment. This section details the stack of the software, the complutational infrastructure and the engineering strategies which are adopted in order to support the development and the training, validation and testing phase.
+
+\subsection{Software Framework}
+The model is developed using Python, leveraging the deep learning library PyTorch 1.12 version, due to its flexibility and the wide adoption of the library in the research community all across the computer science community. Other key supportin libraries used in the research are:
+
+\begin{itemize} \item \textbf{Monai} for data loading, augmentation, and patch-based processing. \item \textbf{NumPy} for numerical operations. \item \textbf{Scikit-learn} for evaluation metrics and other machine learning tasks. \item \textbf{Matplotlib and Seaborn} for visualization of training curves and result analysis. \item \textbf{Pydicom and Nrrd} for medical image I/O, including support for DICOM and nrrd formats. \end{itemize}
+
+\subsection{Hardware Infrastructure}
+The training of the moedl was performed on a server which is equipped with NVIDIA GTX 1080Ti GPU. These resoures enbled efficient handling of ver large scale volumetric datasets and helped with Simultanous experimentations. The training sessions were accelerated using:
+
+\begin{itemize} \item CUDA 12.8 for GPU-accelerated matrix operations. \item cuDNN to optimize the neural network routines. \item PyTorch's automatic mixed precision (AMP) in order to reduce the usage of memories but without sacrificing the accuracy of the model. \end{itemize}
+
+\section{Evaluation Metrics and Experimental Setup}
+In order to correctly evaluate the performance of the proposed methodology for segmentation ,a very comprehensive set of quantitative metrics is utilized, together with a carefully structured experimental setup. These selected metrics were chosen in order to capture both the geometic consistency of the segmentation and also the anatomical plausibility across different imaging conditions.
+
+\subsection{Evaluation Metrics}
+The evaluation of the segmentation performance focused on the following key performance metrics:
+
+\begin{itemize}
+    \item \textbf{Dice Similarity Coefficient (DSC):} Measures the overlap between the predicted and ground truth segmentations, defined as:
+    \begin{equation}
+    DSC = \frac{2|P \cap G|}{|P| + |G|},
+    \end{equation}
+    where $P$ and $G$ denote the predicted and ground truth segmentations, respectively.
+    
+    \item \textbf{Intersection over Union (IoU):} Provides an alternative measure of overlap, calculated as:
+    \begin{equation}
+    IoU = \frac{|P \cap G|}{|P \cup G|},
+    \end{equation}
+    which balances sensitivity and specificity by considering both false positives and false negatives.
+    
+    \item \textbf{Precision:} Indicates the proportion of predicted positive voxels that are truly positive, defined as:
+    \begin{equation}
+    Precision = \frac{TP}{TP + FP},
+    \end{equation}
+    where $TP$ is the number of true positives and $FP$ is the number of false positives. High precision implies fewer false positive segmentations.
+    
+    \item \textbf{Recall (Sensitivity):} Measures the ability of the model to correctly identify all relevant voxels belonging to the target structure, given by:
+    \begin{equation}
+    Recall = \frac{TP}{TP + FN},
+    \end{equation}
+    where $FN$ is the number of false negatives. A high recall value indicates effective capture of the entire structure, even if some false positives occur.
+    \end{itemize}
+    
+These metrics were computed for all volumes in the test set and averaged to provide mean performance indicators, standard deviations, and confidence intervals.
+
+\subsection{Experimental Protocols}
+
+The multiple experiment-based configurations were employed in order to analyze the robustness and the generalizability of the proposed architecture:
+
+\begin{enumerate}
+    \item \textbf{Baseline Comparison:} The base nnFormer architecture was trained and evaluated independently to establish a performance baseline.
+    
+    \item \textbf{Shape Prior Augmentation:} The proposed integrated model combining nnFormer with Statistical Shape Priors (SSP) was evaluated to quantify the impact of incorporating anatomical priors into the segmentation pipeline.
+    
+    \item \textbf{Comparison with SwinUNETR:} The SwinUNETR model, using the same preprocessing and hyperparameter configurations as nnFormer, was trained and evaluated to provide a comparative benchmark.
+    
+    \item \textbf{Noise Robustness Analysis Using Shape Priors:} Robustness to image degradation was tested by introducing Poisson noise to phantom images generated from the shape prior model. These phantoms served as synthetic input SPECT volumes, allowing evaluation of the model's ability to handle severely noisy conditions.
+
+    \item \textbf{Low Data Regime Simulation:} Subsampling experiments were conducted to evaluate segmentation performance under limited labeled data conditions (using 10, 20, 30 40 and 50 patients) and the performances for both the nnFormer and the nnFormer+SSP were compared.
+
+\end{enumerate}
+
+These experimental evaluations comprehensively demonstrate the efficiency, the clinical relaibility and the generalization capability of the nnFormer integrated with the SSP model across a ranging MPI SPECT scenarios.
+
+\section{Summary and Justification of Methodology}
+The choices made about the methodology in this study were guided by the combined objectives of achieving state-of-the-art accuracy of segmentation  and also ensuring the robuustness of the method under constrainsts in a clinical setting, which include limited annotated data and high variance in the MPI SPECT image quality. Each component of the proposed architecture was selected specifically in order to address the challenges that are observed in the previous studies done in medical image segmentation approaches. The adoption of nnFormer as the backbone of the whole architecture is justified because of its ability to model global spatial dependencies and also the contextual relationships, which are most of the times very crucial for resolving ambiguities in a low resolution an high noise vollumetric scans. Unlike the conventional CNN-based architectures operating usually with limited receptive fields, structure of the nnFormer based on transformers allows the model to learn long-range anatomical correlations within the entire volume.
+
+Despite the advantages offered byt the transformer-based architectures
