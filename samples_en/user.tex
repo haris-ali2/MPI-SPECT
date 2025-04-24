@@ -74,6 +74,47 @@ The amalgamation of LV-MSA, GV-MSA and the convolutional operations in the nnFor
 In conclusion, the nnFormer architecture represents a very sophisticated segmentation framework which is specifically tailored for medical imaging systems. The innovative design of the architecture and the advaned methods of attention overcomes the traditional limiations of segmentation models by effectively using optimization techniques across components ensuring accurate, robust and clinically meaningfull segmentation outputs.
 
 \section{Statistical Shape Priors}
+Statistical Shape Priors (SSPs) offer a very powerful approach in order to enhance the robustness of the segmentation, specifically within the domain of medical imaging having data that might have sparse annotations available and noise embedded into it. In the context of MPI SPECT, SSPs are employed as a form of regularization tecnhique that combined the prior knowledge about the left ventricular shape or its anatomy directly into the learning process of a DL model. This section provides a comprehensive examination of the SSP method which is used in this research including its theoretical, background, implementation and integration within the DL pipeline.
+
+\subsection{Motivation for SSPs}
+Tradition DL approaches often rely completely on the pixel-level intensities and their patterns in order to learn the segmentation boundaries. However, using this strategy can become very unreliable in low quality image settings, where the tissue boundaries are most of the time blurred or occluded due to the low resolution of images, noise in them, and partial volume effects. In order to address this issue, SSPs use a population level anatomical information in order to put a constraint on the segmentation process for plausible output shapes increasing the resilience to noise and variability. In MPI SPECT, the consistence delineation of the LV is extremely critical for precise and accurate computation of the functional parameters of the cardiac imagery The shapes of the LV vary across different patients but it maintains a stable topology that can be modeled statistically. SSPs capture this anatomical prior and provide a probabilistic framework that biases the training process towards valid segmentation outputs.
+
+\subsection{Shape Prior Construction}
+The construction of the SSP begins with the creation of a training set that used a set of annotated LV segmentations. These segmentations are first aligned to a common coordinate system using techniques such as affine or non-rigit registeration. After the alignment, the shape representations are extracted, commonly as binary masks. In this work, the shapes are encoded using contoured vectors in a latent space that is suitabl for probabilistic modeling. Once the shapes are aligned, Principal Component Analysis (PCA) is applied to the shape representations in order to identify the primary modes of variation. This gives out a low-dimentional shape space where each shape can actually be representated as a linear combination of the mean shape and a set of principal components. The statistical model can be expressed as:
+
+\begin{equation} S = \bar{S} + Pb, \end{equation} 
+
+where $\bar{S}$ is the mean shape, $P$ is the matrix of principal components, and $b$ is a vector of shape parameters.
+
+The parameters $b$ follow a Gaussian distribution which is estimated from the training data, which orms the basis of the shape prior and is used later to asses the possibility of a predicted shape.
+
+\subsection{Regularization Using Mahalanobis Distance}
+In order to integrate the SSP into the learning, a shape regularization term is added to the loss. This term penalize the deviations from the learned shape space using Mahalanobis distance, which is defined as:
+
+\begin{equation} D_M(b) = (b - \mu)^T \Sigma^{-1} (b - \mu), \end{equation}
+
+where $\mu$ and $\Sigma$ are the mean and covariance of the shape parameters from the training data.
+
+The constraint forces the network to produce output shapes that lie in the distribution of the known shapes. It acts as a force that corrects and guides the model to produce good LV geometries.
+
+\subsection{KL Divergence-Based Optimization}
+In addition to the Mahalanobis distance, a Kullback-Lieber (KL) divergence term is used in order to further align the predicted distribution of shapes with the prior one. The KKL divergence quantifies the difference that exists between the predicted shape distribution $a(b)$ and the prior distribution $p(b)$:
+
+\begin{equation} D_{KL}(q || p) = \int q(b) \log \left(\frac{q(b)}{p(b)}\right) db. \end{equation}
+
+This term is particularly useful when traning any probabilistic model such as a variational auroencoder (VAE) in order to learn to generate a whole distribution of anatomical shapes.
+
+\subsection{Integration into the Segmentation Network}
+The integration of the SSP into the segmentation network follows a specific architectural strategy, instead of applying the regularization on the standalone loss term, the key novelty lies in embedding the prios directly into the feature space of the network, which influences the decoder using enhanced intermediate representations. 
+
+The process begins with sampling the shape prior from the learned statistical distribution which is conditioned on the features that are derived from the input volume of SPECT. This prios reflects a anatomically likely structure that is aligned with the patient's scan, and selected from a low-dimensional latent shape space. For each of the sampled prior there are two metrics that are calculated The first is the Mahalanobis distance ($D_M$) and the second is the KL divergence ($D_{KL}$), which quantify how well the prior comforms with the expected shape. These metrics are then combined into a single scalar shape prior loss:
+
+\begin{equation} \mathcal{L}{shape} = \lambda_1 D_M + \lambda_2 D{KL}, \end{equation}
+
+where $\lambda_1$ and $\lambda_2$ are empirically tuned coefficients.
+
+Instead of usin this $\mathcal{L}_{shape}$ as a regularization term in the loss, first the derivative of this loss is calculated which gives a tensor providing the derivative on the surface of shape prior. This derivative is then reshaped into a tensor matching the spatial dimensions of the nnFormer bottleneck output. Then this reshaped loss derivative term is concatenated to with the bottleneck of the feature map. This results in a fused representation that encodes both the contextual features that are data driven and the shape information giving the anatomical constraints. The decoder then processes this combined tensor, enabling the final segmentation to benefit from the shape priors. This integration guides the feature propagation throughout the whole network, improving the spatial cohernce and the consistency of the segmentation.
+
 
 
 \section{Training and Optimization Procedures}
@@ -180,4 +221,7 @@ These experimental evaluations comprehensively demonstrate the efficiency, the c
 \section{Summary and Justification of Methodology}
 The choices made about the methodology in this study were guided by the combined objectives of achieving state-of-the-art accuracy of segmentation  and also ensuring the robuustness of the method under constrainsts in a clinical setting, which include limited annotated data and high variance in the MPI SPECT image quality. Each component of the proposed architecture was selected specifically in order to address the challenges that are observed in the previous studies done in medical image segmentation approaches. The adoption of nnFormer as the backbone of the whole architecture is justified because of its ability to model global spatial dependencies and also the contextual relationships, which are most of the times very crucial for resolving ambiguities in a low resolution an high noise vollumetric scans. Unlike the conventional CNN-based architectures operating usually with limited receptive fields, structure of the nnFormer based on transformers allows the model to learn long-range anatomical correlations within the entire volume.
 
-Despite the advantages offered byt the transformer-based architectures
+Despite the advantages offered by the transformer-based architectures such as the nnFormer they still require a large amount of data to learn effectively. In order to overcome this limitation and enhance the generalizability considering low data settings, the SSP integration was introduced in the architecture. This update helps the model b embedding domain knowledge into the DL model training phase as a way of providing anatomical regularization. This method provides a constraint to the segmentation model's output to plausibile shapes, hence enhancing the reliability especially in cases that are challenging to work with suc as scans having perfusion defects or motion artifacts. The inclusion of this SSP focuses on an important gap that exists in the eisting methods. Traditiona CNNs, and even transformer models can produce segmentations that might be structurally not plausibile, especially when faced with data that is noisy or sparse. By incorporatin the shape regularization, which is based on the Mahalanobis distance and the KL divergence penalty, the proposed methodology ensures that the model adheres to expected anatomical configurations, but not at the cost of flexibility in the learning of the data. This balance is very critical in order to maintain credibility in real-world clinical applications.
+
+In addition to all of this, the loss function, so-called the DiceCELoss, was motivated by the need of balancing the pixel-wise accuraacy witht the anatomical correctness of the output. This hybrid loss contributes to having consistency during the convergence process during the training phase, all the while promoting accuracy of the segmentation in both common and edge-case scenarios. Another ver important decision was the use of multiple experimental protocols including the baseline comparisions of nnFormer and the SwinUNETR with our proposed architecture, and noise robust testing. All of these experiments were structured to validate the performance improvements and also to assess the generalizability of the model across multiple different imaging conditions. From the perspective of implementation, the usage of high-performance GPU hardware and a scalable software design ensred that the model is very efficiently trained and tested.
+
