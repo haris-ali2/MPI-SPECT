@@ -1,3 +1,5 @@
 \select@language {english} \addvspace {10\p@ }
 \select@language {english} \addvspace {10\p@ }
 \select@language {english} \addvspace {10\p@ }
+\select@language {english} \addvspace {10\p@ }
+\select@language {english} \contentsline {table}{\numberline {4.1}{\ignorespaces Averaged segmentation results on the patient dataset. The proposed shape prior enhanced transformer is able to outperform the nnFormer \blx@tocontentsinit {0}\cite {zhou2023nnformer} and SWIN-transformer \blx@tocontentsinit {0}\cite {10.1007/978-3-031-08999-2_22} approaches in most metrics.}}{33}{table.caption.5}%

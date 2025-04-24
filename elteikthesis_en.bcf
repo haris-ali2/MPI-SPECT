@@ -2402,6 +2402,13 @@
     <bcf:citekey order="39" intorder="1">Nagy2013</bcf:citekey>
     <bcf:citekey order="40" intorder="1">Hudson1994</bcf:citekey>
     <bcf:citekey order="41" intorder="1">Kingma2015Adam</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">xcat</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">zhou2023nnformer</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">10.1007/978-3-031-08999-2_22</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">zhou2023nnformer</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">10.1007/978-3-031-08999-2_22</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">zhou2023nnformer</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">10.1007/978-3-031-08999-2_22</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

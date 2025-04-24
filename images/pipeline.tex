@@ -27,8 +27,7 @@
 % \draw[arrow, dashed] (shape.east) -- (preprocess.west);
 
 % Fusion
-\node[block, below=of encoder] (fusion) {Feature Fusion \\ (nnFormer Features $\oplus$ Shape Priors)};
-\draw[arrow] (encoder) -- (fusion);
+\node[block, below=of encoder] (fusion) {Feature Fusion \\ (nnFormer Features \ensuremath{\oplus} Shape Priors)};\draw[arrow] (encoder) -- (fusion);
 \draw[arrow] (shape.south) |- ([xshift=-5mm]fusion.west) -- (fusion.west);
 
 % Decoder
@@ -41,15 +40,6 @@
 \node[below=1mm of output, font=\footnotesize] {LV Segmentation Mask};
 \draw[arrow] (decoder) -- (output);
 
-% Properly positioned legend
-% \node[legendbox] at ([xshift=3cm,yshift=-6cm]current bounding box.west) {
-%     \begin{tabular}{@{}l@{\ }l@{}}
-%         \textcolor{blue}{\rule{5mm}{1mm}} & Main Network Path \\
-%         \textcolor{red}{\rule{5mm}{1mm}} & Shape Prior Components \\
-%         \textcolor{black}{\rule{5mm}{1mm}\textsuperscript{---}} & Skip Connections \\
-%         $\oplus$ & Feature Fusion Operation
-%     \end{tabular}
-% };
 
 % Ensure all content is within bounds
 \useasboundingbox (current bounding box.south west) rectangle ([xshift=6cm]current bounding box.north east);

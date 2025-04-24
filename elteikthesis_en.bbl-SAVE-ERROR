@@ -706,6 +706,7 @@
       \strng{authorbibnamehash}{2cafd1802e72f709f31fc13a873b39d1}
       \strng{authornamehash}{2cafd1802e72f709f31fc13a873b39d1}
       \strng{authorfullhash}{19f4fecc153d394863e7220f5ccc254e}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -2043,6 +2044,248 @@
       \verb https://doi.org/10.1145/3632047.3632078
       \endverb
       \keyw{Myocardial Perfusion Imaging • Single-Photon Emission Computed Tomography • Coronary Artery Disease • Self-Supervised Learning}
+    \endentry
+    \entry{10.1109/TIP.2023.3293771}{article}{}
+      \name{author}{7}{}{%
+        {{hash=67c911af59a55cb59ce5da3a901d4791}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Hong-Yu},
+           giveni={H\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=397e33bff1dc84aa6fe1e0cae2899f61}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Jiansen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d4c50fc72f554c8612608beaee811556}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yinghao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ce3682554f147fbd9c76c566cf0ec373}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Xiaoguang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=151ed9ce1bf14870fe4af0f93156c742}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Lequan},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f7d408afa9f368fcb6e3c78a3680933c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Liansheng},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d7b46e3440bad0d84af1355b22aa8d9b}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Yizhou},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Press}%
+      }
+      \strng{namehash}{2cafd1802e72f709f31fc13a873b39d1}
+      \strng{fullhash}{19f4fecc153d394863e7220f5ccc254e}
+      \strng{bibnamehash}{2cafd1802e72f709f31fc13a873b39d1}
+      \strng{authorbibnamehash}{2cafd1802e72f709f31fc13a873b39d1}
+      \strng{authornamehash}{2cafd1802e72f709f31fc13a873b39d1}
+      \strng{authorfullhash}{19f4fecc153d394863e7220f5ccc254e}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Transformer, the model of choice for natural language processing, has drawn scant attention from the medical imaging community. Given the ability to exploit long-term dependencies, transformers are promising to help atypical convolutional neural networks to learn more contextualized visual representations. However, most of recently proposed transformer-based segmentation approaches simply treated transformers as assisted modules to help encode global context into convolutional representations. To address this issue, we introduce nnFormer (i.e., not-another transFormer), a 3D transformer for volumetric medical image segmentation. nnFormer not only exploits the combination of interleaved convolution and self-attention operations, but also introduces local and global volume-based self-attention mechanism to learn volume representations. Moreover, nnFormer proposes to use skip attention to replace the traditional concatenation/summation operations in skip connections in U-Net like architecture. Experiments show that nnFormer significantly outperforms previous transformer-based counterparts by large margins on three public datasets. Compared to nnUNet, the most widely recognized convnet-based 3D medical segmentation model, nnFormer produces significantly lower HD95 and is much more computationally efficient. Furthermore, we show that nnFormer and nnUNet are highly complementary to each other in model ensembling. Codes and models of nnFormer are available at <uri>https://git.io/JSf3i</uri>.}
+      \field{issn}{1057-7149}
+      \field{journaltitle}{Trans. Img. Proc.}
+      \field{month}{1}
+      \field{title}{nnFormer: Volumetric Medical Image Segmentation via a 3D Transformer}
+      \field{volume}{32}
+      \field{year}{2023}
+      \field{pages}{4036\bibrangedash 4045}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/TIP.2023.3293771
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/TIP.2023.3293771
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/TIP.2023.3293771
+      \endverb
+    \endentry
+    \entry{Nagy2013}{article}{}
+      \name{author}{16}{}{%
+        {{hash=3b9a09bfbef1c143e902043276e68515}{%
+           family={Nagy},
+           familyi={N\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=15143bf30a239b7ee5046708e7d078e9}{%
+           family={Tóth},
+           familyi={T\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5a40ac63e5bc543fd649c96464a281ca}{%
+           family={Major},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=97191e70f099a541398bf325fe4a1404}{%
+           family={Patay},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e52762cbc35d013ba29d66e060b0f4c5}{%
+           family={Egri},
+           familyi={E\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d6224a39fbd22ab6ddd39f22a71e98bb}{%
+           family={Hegedűs},
+           familyi={H\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=60cc5588d3de76d55872eb736eb247ff}{%
+           family={Trencsényi},
+           familyi={T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b70e9bba39c7ce6aec1cea7a6432b401}{%
+           family={Halldórsson},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=39d18ea76807f11b41b5e9e47cf5d68a}{%
+           family={Pálos},
+           familyi={P\bibinitperiod},
+           given={A.\bibnamedelimi J.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=84b4916aa80f0dae6adbf3aba797f3f7}{%
+           family={Kántor},
+           familyi={K\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=04d5db6c742b2f3c36237a03451b3ffd}{%
+           family={Garai},
+           familyi={G\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=a117a51b010593a8ee27a5ebd2246ed8}{%
+           family={Balkay},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a67dab876dc5c292d39d7bba7a1de56c}{%
+           family={Szigeti},
+           familyi={S\bibinitperiod},
+           given={G.\bibnamedelimi S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=79f29ef9009cfc7fb96976d056149a52}{%
+           family={Papp},
+           familyi={P\bibinitperiod},
+           given={I.\bibnamedelimi G.},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=d1de71eb648e6571a486bfb392446951}{%
+           family={Képes},
+           familyi={K\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=229e38fc352c946f65fa5fdebda2e9e8}{%
+           family={Gulyás},
+           familyi={G\bibinitperiod},
+           given={I.\bibnamedelimi G.},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d3667bed620ceb07e86536422df20de}
+      \strng{fullhash}{60e89846f5eeeb915cb272453fae798d}
+      \strng{bibnamehash}{7d3667bed620ceb07e86536422df20de}
+      \strng{authorbibnamehash}{7d3667bed620ceb07e86536422df20de}
+      \strng{authornamehash}{7d3667bed620ceb07e86536422df20de}
+      \strng{authorfullhash}{60e89846f5eeeb915cb272453fae798d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Nuclear Medicine}
+      \field{number}{10}
+      \field{title}{Performance Evaluation of the Small-Animal nanoScan PET/MRI System}
+      \field{volume}{54}
+      \field{year}{2013}
+      \field{pages}{1825\bibrangedash 1832}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.2967/jnumed.112.114785
+      \endverb
+    \endentry
+    \entry{Hudson1994}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b336a0323e796e6eb7eb8913aec89e5f}{%
+           family={Hudson},
+           familyi={H\bibinitperiod},
+           given={H.\bibnamedelimi M.},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=78565907640d68fd99a2fbe2fa884067}{%
+           family={Larkin},
+           familyi={L\bibinitperiod},
+           given={R.\bibnamedelimi S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e261d6139c2cfb6c55b575aee87338f}
+      \strng{fullhash}{7e261d6139c2cfb6c55b575aee87338f}
+      \strng{bibnamehash}{7e261d6139c2cfb6c55b575aee87338f}
+      \strng{authorbibnamehash}{7e261d6139c2cfb6c55b575aee87338f}
+      \strng{authornamehash}{7e261d6139c2cfb6c55b575aee87338f}
+      \strng{authorfullhash}{7e261d6139c2cfb6c55b575aee87338f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Medical Imaging}
+      \field{number}{4}
+      \field{title}{Accelerated image reconstruction using ordered subsets of projection data}
+      \field{volume}{13}
+      \field{year}{1994}
+      \field{pages}{601\bibrangedash 609}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/42.363108
+      \endverb
+    \endentry
+    \entry{Kingma2015Adam}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Conference on Learning Representations (ICLR)}
+      \field{title}{Adam: A Method for Stochastic Optimization}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1412.6980
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1412.6980
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

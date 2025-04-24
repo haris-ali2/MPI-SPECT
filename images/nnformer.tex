@@ -1,0 +1,152 @@
+\begin{tikzpicture}[
+    >=LaTeX, % Use default LaTeX arrows
+    very thick,
+    arrow/.style={
+        -latex,
+        very thick,
+        rounded corners=0.2cm
+    },
+    block/.style={
+        rectangle,
+        fill=gray!10,
+        rounded corners=3mm,
+        draw,
+        very thick
+    },
+    layer/.style={
+        rectangle,
+        fill=white!10,
+        rounded corners=1mm,
+        inner xsep=0em,
+        inner ysep=0.25em,
+        minimum height=1.4em,
+        align=center,
+        text width=2.5cm,
+        draw,
+        very thick
+    },
+    input/.style={ % Input or output node
+        circle,
+        minimum width=2.25em,
+        draw,
+        fill=gray!10,
+        thick
+    },
+    do path picture/.style={%
+        path picture={%
+          \pgfpointdiff{\pgfpointanchor{path picture bounding box}{south west}}%
+            {\pgfpointanchor{path picture bounding box}{north east}}%
+          \pgfgetlastxy\x\y%
+          \tikzset{x=\x/2,y=\y/2}%
+          #1
+        }
+    },
+    sin wave/.style={do path picture={    
+        \draw [line cap=round] (-3/4,0)
+        sin (-3/8,1/2) cos (0,0) sin (3/8,-1/2) cos (3/4,0);
+        }
+    }
+]
+
+    \node[input] (iemb) at (1.25,-0.45) {$\mathbf{x}$};
+
+    % Sums
+    \node[circle, draw, minimum size=0.25em, inner sep=0pt, above=1em of iemb] (sum1) {$\mathbf{+}$};
+
+    % Encoder, 1st layer
+    \node[layer] (add1) at (1.25, 3.5) {Down-sampling};
+    \node[layer] (lattn1) at (1.25, 2.0) {Local \vspace{-0.05cm} \linebreak Self-attention};
+    \draw[arrow] (lattn1) -- (add1);
+    % Encoder 2nd sub-layer
+    \node[layer] (add4) at (1.25, 6.5) {Down-sampling};
+    \node[layer] (lattn2) at (1.25, 5.0) {Local \vspace{-0.05cm} \linebreak Self-attention};
+    \draw[arrow] (lattn2) -- (add4);
+
+    % Bottleneck, 1st layer
+    \node[layer] (badd1) at (1.25, 9.0) {Down-sampling};
+    \node[layer] (gattn1) at (1.25, 8.0) {Global \vspace{-0.05cm} \linebreak Self-attention};
+    \draw[arrow] (gattn1) -- (badd1);
+    \draw[arrow] (add4) -- (gattn1);
+
+    % Bottleneck, 2nd sub-layer
+    \node[input] (skip3) at (1.25, 12.5) {S};
+    \node[layer] (badd4) at (1.25, 11.5) {Up-sampling};
+    \node[layer] (gattn2) at (1.25, 10.5) {Global \vspace{-0.05cm} \linebreak Self-attention};
+    \node[layer] (gattn3) at (1.25, 14.0) {Global \vspace{-0.05cm} \linebreak Self-attention};
+    \draw[arrow] (badd1) -- (gattn2);
+    \draw[arrow] (gattn2) -- (badd4);
+    \draw[arrow] (badd4) -- (skip3);
+    \draw[arrow] (skip3) -- (gattn3);
+
+    % Decoder 1st sub-layer
+    \node[layer] (add3) at (5.25,2.1) {Upsampling};
+    \node[input] (skip2) at (5.25,3.0) {S};
+    % Decoder, 2nd sub-layer
+    \node[layer] (add2) at (5.25,5.1) {Upsampling};
+    \node[layer] (attn2) at (5.25,4.2) {Local \vspace{-0.05cm} \linebreak Self-attention};
+    \node[input] (skip1) at (5.25,6.0) {S};
+    \draw[arrow] (attn2) -- (add2);
+    % Decoder 3rd sub-layer
+    \node[layer] (ff2) at (5.25, 7.50) {Local \vspace{-0.05cm} \linebreak Self-attention};
+    \draw[arrow] (add3) -- (skip2);
+    \draw[arrow] (skip2) -- (attn2);
+    \draw[arrow] (add2) -- (skip1);
+    \draw[arrow] (skip1) -- (ff2);
+
+    \coordinate (d1) at ($(add3.south east) + (0.75,-0.90)$);
+    \coordinate (d2) at ($(ff2.north west) + (-0.15,0.05)$);
+    \coordinate (e1) at ($(lattn1.south east) + (0.15,-0.7)$);
+    \coordinate (e2) at ($(add4.north west) + (-0.75,0.00)$);
+    \coordinate (f1) at ($(gattn1.south east) + (0.15,-0.5)$);
+    \coordinate (f2) at ($(gattn3.north west) + (-0.75,0.05)$);
+    \begin{scope}[on background layer]
+        \node[block, fit=(d1) (d2)] (decoder) {};
+        \node[block, fit=(e1) (e2)] (encoder) {};
+        \node[block, fit=(f1) (f2)] (bottleneck) {};
+    \end{scope}
+
+    % Classifier
+    %\node[layer, above=1em of ff2] (softmax) {Softmax};
+    \node[circle, draw, minimum size=0.25em, inner sep=0pt, above=1em of ff2] (sum2) {$\mathbf{\times}$};
+    \node[input, above=1em of sum2] (probs) {$\hat{\mathbf{y}}$};
+
+    \draw[arrow] (add1) -- (lattn2);
+    \draw[arrow] (iemb) -- (sum1);
+    \draw[arrow] (sum1) -- (lattn1);
+
+    \draw[arrow] (lattn1.south)++(0, -0.4) -| ($(lattn1.south) + (-1,0)$);
+    \draw[arrow] (lattn1.south)++(0, -0.4) -| ($(lattn1.south) + (1,0)$);
+
+    \draw[arrow] (lattn2.south)++(0, -0.4) -| ($(lattn2.south) + (-1,0)$);
+    \draw[arrow] (lattn2.south)++(0, -0.4) -| ($(lattn2.south) + (1,0)$);
+
+    \draw[arrow] (gattn1.south)++(0, -0.4) -| ($(gattn1.south) + (-1,0)$);
+    \draw[arrow] (gattn1.south)++(0, -0.4) -| ($(gattn1.south) + (1,0)$);
+
+    \draw[arrow] (gattn2.south)++(0, -0.4) -| ($(gattn2.south) + (-1,0)$);
+    \draw[arrow] (gattn2.south)++(0, -0.4) -| ($(gattn2.south) + (1,0)$);
+
+    \draw[arrow] (gattn3.south)++(0, -0.4) -| ($(gattn3.south) + (-1,0)$);
+    \draw[arrow] (gattn3.south)++(0, -0.4) -| ($(gattn3.south) + (1,0)$);
+
+    \draw[arrow] (lattn1.north)++(0, 0.1) |- ($(skip2.west) + (0.0,0)$);
+    \draw[arrow] (lattn2.north)++(0, 0.1) |- ($(skip1.west) + (0.0,0)$); 
+
+    \draw[arrow] (gattn3.north) |- ($(gattn3.north) + (1,1)$) -| ($(gattn3.north) + (2,-1)$) |- ($(add3.south) + (-1,-0.4)$) -| ($(add3.south) + (-1,0)$);
+
+    \draw[arrow] (gattn1.north) |- ($(gattn1.north) + (-1.75,0)$) -| ($(gattn1.north) + (-1.75,0)$) |- ($(skip3.west) + (0, 0)$);
+
+    \draw[arrow] (ff2.south)++(0, -0.4) -| ($(ff2.south) + (-1,0)$);
+    \draw[arrow] (ff2.south)++(0, -0.4) -| ($(ff2.south) + (1,0)$);
+
+    \draw[arrow] (attn2.south)++(0, -0.4) -| ($(attn2.south) + (-1,0)$);
+    \draw[arrow] (attn2.south)++(0, -0.4) -| ($(attn2.south) + (1,0)$);
+
+    \draw[arrow] (iemb) -- (sum1);
+    \draw[arrow] (sum2) -- (probs);
+    \draw[arrow] (ff2) -- (sum2);
+
+    \node[anchor=east] at ($(encoder.west) + (-0.2,0)$) {Encoder};
+    \node[anchor=east] at ($(bottleneck.west) + (-0.2,0)$) {Bottleneck};
+    \node[anchor=west] at ($(decoder.east) + (0.2,0)$) {Decoder};
+  \end{tikzpicture}

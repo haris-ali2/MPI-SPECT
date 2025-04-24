@@ -1,0 +1,34 @@
+\chapter{Results}
+\label{ch:results}
+
+The evaluation of the segmentation methodology that is proposed in this research was structured in a very progressive and the systemic manner which begins with the evaluation using synthetic phantom data and then extending into a very comprehensive analysis on real patient datasets. This layered evaluation approch allowed for a very detailed inspection of the model's behaviour under controlled and also some clinically realistic conditions, which validates its robustness, generalization capability and the precision. The results were  assessed using a number of statistical and validation techniques.
+
+\section{Evaluation on Synthetic Phantom Data}
+The first phase of the evaluation process involves the testing of the segmentation pipeline on simulated data, or so-called the phantoms, by introducing poisson noise into the data using th x-cat phantom generator \cite{xcat}. Such a type of phantom is very widely regarded for the anatomical realism and is very frequently used in nuclear medicine as a gold standard baseline for the validation of the method. In this experiment varying levels of the Poisson noise were synthetically added to proper clean phantoms in order to simulate differing signal-to-noise ratio (SNR) conditions. The rationale behind the usage of Poisson noise is rooteed in the fact that the nature of the SPECT imaging physics, where noise originates rom stochastic processes during the photon detection. This proves Poisson noise to be an appropriate and clinically relevant choice for the performance benchmarking of the models. The noise levels spanned a range from the severely degraded (low SNR) to relativelyy clean (high SNR), providing deep insights into the robustness of the algorithm against various levels of deteriorated image quality.
+
+The quantitative analysis of the model on phantoms revealed that the proposed model maintains a performance above a random baseline across all the tested conditons but more importantly, it shows a notable increase in the segmentation accuracy, particularly after the 0 dB SNR. While all the metrics showed an improvement with increasin SNR, one very significant result was the behaviour of the precision of the model across the range. The precision sowed 3x to 4x improvement compared to the other available metrics, showing that the model provides strong in selectivity in identifyin relevant regions even in noisy volumes. This capability is very essential for clinical reliability, where the false positives could lead to unnecessary procedures.
+
+\section{Quantitative Comparison with Transformer Architectures}
+In order to benchmark the proposed architecture against th state-of-the-art transformer based segmentation models we implemented two relevant and efficiently proved alternatives: nnFormer \cite{zhou2023nnformer} and Swin-UNETR \cite{10.1007/978-3-031-08999-2_22}. All of the models were trined under identical conditions using the same 60 patient training size and the 14 patient validation size in order to ensure a fair comparison between the models. The averaged quantitative results are summarized in Table \ref{tab:quantitative_comparison}. The proposed architecture consistently outperformed both the models for comparison across almost all the evaluation metrics. notably the precision, dice and the Iou score were higher which reflects an enhanced segmentation accuracy and spatial consistency. The one exception was the recall, where Swin-UNetR achieves a slightly higher values due to the consistent oversegmentation trend that is observed over several different samples. This suggests that while Swin-UNetR may be able to capture more positive instances, it does that at the cost of specificity which leads to a higher false positives rate. These results prove that the superior balance that needs to be achieved between the precision and the recall is done by the architecture proposed, which is an extremely important aspect of the clinical segmentation tasks in order to avoid both uner and oversegmentation.
+
+\begin{table}[h!]
+    \begin{tabular}{ |p{2.3cm}|p{2.3cm}|p{2.3cm}|p{2.3cm}|p{2.3cm}|}
+            \hline
+            \multicolumn{5}{|c|}{Averaged performance metrics} \\
+            \hline
+             & Precision & Recall & IoU & Dice score \\
+            \hline
+            Our model & \textbf{0.714} & 0.7545 & \textbf{0.5706} & \textbf{0.7172} \\
+            \hline
+            nnFormer & 0.6819 & 0.6457 & 0.4715 & 0.6334 \\
+            \hline
+            SWIN-UNetR & 0.5329 & \textbf{0.9158} & 0.4949 & 0.6404 \\
+            \hline
+    \end{tabular}
+    \caption{Averaged segmentation results on the patient dataset. The proposed shape prior enhanced transformer is able to outperform the nnFormer \cite{zhou2023nnformer} and SWIN-transformer \cite{10.1007/978-3-031-08999-2_22} approaches in most metrics.}
+    \label{tab:quantitative_comparison}
+  \end{table}
+
+
+\section{Effectiveness of Shape Priors on Anatomical Conformance}
+More in-depth investigatin into the role of SSP was conducted 

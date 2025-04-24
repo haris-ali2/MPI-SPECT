@@ -6,36 +6,40 @@
 \select@language {english} \contentsline {chapter}{\numberline {3}Methodology}{12}{chapter.3}%
 \select@language {english} \contentsline {section}{\numberline {3.1}Overview}{12}{section.3.1}%
 \select@language {english} \contentsline {section}{\numberline {3.2}Data Acquisition and Preprocessing}{14}{section.3.2}%
-\select@language {english} \contentsline {section}{\numberline {3.3}Detailed Description of nnFormer Architecture}{16}{section.3.3}%
+\select@language {english} \contentsline {section}{\numberline {3.3}Detailed Description of nnFormer Architecture}{17}{section.3.3}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.1}Overall Architecture}{17}{subsection.3.3.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.2}Encoder}{17}{subsection.3.3.2}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.3}Bottleneck}{18}{subsection.3.3.3}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.4}Decoder}{18}{subsection.3.3.4}%
-\select@language {english} \contentsline {subsection}{\numberline {3.3.5}Attention Mechanisms}{18}{subsection.3.3.5}%
+\select@language {english} \contentsline {subsection}{\numberline {3.3.5}Attention Mechanisms}{19}{subsection.3.3.5}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.6}Integration and Optimization}{19}{subsection.3.3.6}%
 \select@language {english} \contentsline {section}{\numberline {3.4}Statistical Shape Priors}{20}{section.3.4}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.1}Motivation for SSPs}{20}{subsection.3.4.1}%
-\select@language {english} \contentsline {subsection}{\numberline {3.4.2}Shape Prior Construction}{20}{subsection.3.4.2}%
+\select@language {english} \contentsline {subsection}{\numberline {3.4.2}Shape Prior Construction}{21}{subsection.3.4.2}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.3}Regularization Using Mahalanobis Distance}{21}{subsection.3.4.3}%
-\select@language {english} \contentsline {subsection}{\numberline {3.4.4}KL Divergence-Based Optimization}{21}{subsection.3.4.4}%
+\select@language {english} \contentsline {subsection}{\numberline {3.4.4}KL Divergence-Based Optimization}{22}{subsection.3.4.4}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.5}Integration into the Segmentation Network}{22}{subsection.3.4.5}%
 \select@language {english} \contentsline {section}{\numberline {3.5}Training and Optimization Procedures}{23}{section.3.5}%
 \select@language {english} \contentsline {subsection}{\numberline {3.5.1}Training Dataset and Splits}{23}{subsection.3.5.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.5.2}Data Augmentation}{23}{subsection.3.5.2}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.3}Loss Function}{23}{subsection.3.5.3}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.3}Loss Function}{24}{subsection.3.5.3}%
 \select@language {english} \contentsline {subsection}{\numberline {3.5.4}Optimization Strategy}{24}{subsection.3.5.4}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.5}Evaluation Pipeline}{24}{subsection.3.5.5}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.5}Evaluation Pipeline}{25}{subsection.3.5.5}%
 \select@language {english} \contentsline {subsection}{\numberline {3.5.6}Implementation Environment}{25}{subsection.3.5.6}%
 \select@language {english} \contentsline {section}{\numberline {3.6}Implementation Details and Computational Environment}{25}{section.3.6}%
-\select@language {english} \contentsline {subsection}{\numberline {3.6.1}Software Framework}{25}{subsection.3.6.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.6.1}Software Framework}{26}{subsection.3.6.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.6.2}Hardware Infrastructure}{26}{subsection.3.6.2}%
 \select@language {english} \contentsline {section}{\numberline {3.7}Evaluation Metrics and Experimental Setup}{26}{section.3.7}%
-\select@language {english} \contentsline {subsection}{\numberline {3.7.1}Evaluation Metrics}{26}{subsection.3.7.1}%
-\select@language {english} \contentsline {subsection}{\numberline {3.7.2}Experimental Protocols}{27}{subsection.3.7.2}%
+\select@language {english} \contentsline {subsection}{\numberline {3.7.1}Evaluation Metrics}{27}{subsection.3.7.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.7.2}Experimental Protocols}{28}{subsection.3.7.2}%
 \select@language {english} \contentsline {section}{\numberline {3.8}Summary and Justification of Methodology}{28}{section.3.8}%
-\select@language {english} \contentsline {chapter}{Acknowledgements}{30}{chapter*.4}%
-\select@language {english} \contentsline {chapter}{Bibliography}{30}{section*.5}%
-\select@language {english} \contentsline {chapter}{List of Figures}{37}{section*.7}%
-\select@language {english} \contentsline {chapter}{List of Tables}{38}{section*.8}%
-\select@language {english} \contentsline {chapter}{List of Algorithms}{39}{section*.9}%
-\select@language {english} \contentsline {chapter}{List of Codes}{40}{section*.11}%
+\select@language {english} \contentsline {chapter}{\numberline {4}Results}{31}{chapter.4}%
+\select@language {english} \contentsline {section}{\numberline {4.1}Evaluation on Synthetic Phantom Data}{31}{section.4.1}%
+\select@language {english} \contentsline {section}{\numberline {4.2}Quantitative Comparison with Transformer Architectures}{32}{section.4.2}%
+\select@language {english} \contentsline {section}{\numberline {4.3}Effectiveness of Shape Priors on Anatomical Conformance}{33}{section.4.3}%
+\select@language {english} \contentsline {chapter}{Acknowledgements}{34}{chapter*.6}%
+\select@language {english} \contentsline {chapter}{Bibliography}{34}{section*.7}%
+\select@language {english} \contentsline {chapter}{List of Figures}{41}{section*.9}%
+\select@language {english} \contentsline {chapter}{List of Tables}{42}{section*.10}%
+\select@language {english} \contentsline {chapter}{List of Algorithms}{43}{section*.11}%
+\select@language {english} \contentsline {chapter}{List of Codes}{44}{section*.13}%

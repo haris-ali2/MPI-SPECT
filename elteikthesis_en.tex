@@ -35,7 +35,21 @@
 % Add bibliography file
 \addbibresource{elteikthesis.bib}
 
-\usetikzlibrary{arrows.meta, positioning, shapes.geometric}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{transparent}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage[record,abbreviations,symbols]{glossaries-extra}
+
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usetikzlibrary{math}
+\usepackage{ifthen}
+
+\usetikzlibrary{positioning, chains, shapes.geometric, fit, shapes, arrows.meta, calc, backgrounds, intersections,shapes.arrows}
+
 \newsavebox{\bigimage}
 
 % The document
@@ -104,6 +118,9 @@ Thank you all.
 \cleardoublepage
 
 \input{samples_en/user.tex}
+\cleardoublepage
+
+\input{samples_en/results.tex}
 \cleardoublepage
 
 % Acknowledgements (optional) - in case your thesis received funding or would like to express special thanks to someone

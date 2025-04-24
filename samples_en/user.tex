@@ -1,23 +1,12 @@
 \chapter{Methodology}
 \label{ch:method}
 
-% \begin{figure}[htb!]  % Changed from figure* to figure unless you specifically need double-column
-%     \centering
-%     % \begin{subfigure}[b]{1.5\textwidth} 
-% 	\centering
-% 	\resizebox{1.5\textwidth}{!}{
-% 		\input{images/pipeline.tex}
-% 	}
-% 	\caption{\centering Network architecture pipeline}
-% 	\label{fig:network_pipeline}
-% \end{figure}
-
 \section{Overview}
 The main goal of the research is to propose a comprehensive and strong method which is desiggned specifically to significantly improve the accuracy of the segmentation of MPI using SPECT for the Left ventricle. The precise segmentation of MPI SPECT images is extremely critical for the detection and the assessment of CAD. However, the task of achieving a high accuracy in segmentation poses a number of challenges due to a multitude of inherent limitations of MPI SPECT data, such as low signal-to-noise ratio (SNR) partial volume affects, substantial noise because of the poisson statistics, motion artifacts and, obviously, the anatomical variability among different patints. 
 
 In order to address these challlenges, the proposed research amalgamates advanced approaches in the field of deep learning, more specifically utilizing the transformer based architecture known as nnFormer \cite{10.1109/TIP.2023.3293771}, which is combined with an innovative idea of using statistical shape prios. The nnFormer architecture is chosen because of the ability of it of capturing both the ocal and the global information or contextual relationships in volumetric data as opposed to traditional CNNs which only capture local information. nnFormer leverages the local volume-based (LV-MSA) and the global volume-based (GV-MSA) multi-head self-attention mechanisms very efficiently in a unified method. These modules of the transformer architecture very effectively encode the longg-range dependencies which are extremely important for better segmentation accuracy specifically in medical imaging where they are characterized by indistinct boundaries.
 
-Simultanously, the SSP are merged into the segmentation pipeline in order to improve the anatomical consistency of the model. SSPs provide the DL model with a mathematical model which captures the probabilistic variability off the LV that are derived from the data annotated by experts. This SSP methos employes an advanced technique of optimization such as Mahalanobis distance based regularization and the Kullback-Liebler (KL) divergence in order to refine the segmentation boundaries. This way the outputs of the segmentation model maintain plausibile anatomical outputs, which improves the segmentation accuracy even when the input data is incomplete or ambiguous. The combination of nnFormer and SSP provides us with a novel hybrid architecture. 
+Simultanously, the SSP are merged into the segmentation pipeline in order to improve the anatomical consistency of the model. SSPs provide the DL model with a mathematical model which captures the probabilistic variability off the LV that are derived from the data annotated by experts. This SSP methos employes an advanced technique of optimization such as Mahalanobis distance based regularization and the Kullback-Liebler (KL) divergence in order to refine the segmentation boundaries. This way the outputs of the segmentation model maintain plausibile anatomical outputs, which improves the segmentation accuracy even when the input data is incomplete or ambiguous. The combination of nnFormer and SSP provides us with a novel hybrid architecture. The full architecture pipeline is presented, on an abstract level, in \cref{fig:network_pipeline}.
 
 This hybrid approach leverages not only the strengths of DL models in extracting complex and heirarchical feature representations from volumetric data, but also the advantages of SSPs in mantaining consistent anatomies. This approach also adressess the limitations of the existing methods, which include inefficient generalization capability and dependencies of large, precisely annotated data for training. It also mitigates the impact of a number of different imaging artifacts and the noise, which enhances the overall relaibility on the segmentations.
 
@@ -25,6 +14,16 @@ Extensive procedures for training involving efficient optimization strategies su
 
 In a summary, the proposed methodology contibutes to not only a significant advancement in the division of cardiac image segmentation but also provides a practical and robust solution which is applicable in a clinical environment. The combination of nnFormer and SSP ensures reliable and precise segmentation having clinically meaningful results, which paves the way for better and improved diagnosis and patient outcoms in CAD management.
 
+\begin{figure}[htb!]  % Changed from figure* to figure unless you specifically need double-column
+    \centering
+    % \begin{subfigure}[b]{1.5\textwidth} 
+	\centering
+	\resizebox{1\textwidth}{!}{
+		\input{images/pipeline.tex}
+	}
+	\caption{\centering Network architecture pipeline}
+	\label{fig:network_pipeline}
+\end{figure}
 
 \section{Data Acquisition and Preprocessing}
 
@@ -114,7 +113,6 @@ The process begins with sampling the shape prior from the learned statistical di
 where $\lambda_1$ and $\lambda_2$ are empirically tuned coefficients.
 
 Instead of usin this $\mathcal{L}_{shape}$ as a regularization term in the loss, first the derivative of this loss is calculated which gives a tensor providing the derivative on the surface of shape prior. This derivative is then reshaped into a tensor matching the spatial dimensions of the nnFormer bottleneck output. Then this reshaped loss derivative term is concatenated to with the bottleneck of the feature map. This results in a fused representation that encodes both the contextual features that are data driven and the shape information giving the anatomical constraints. The decoder then processes this combined tensor, enabling the final segmentation to benefit from the shape priors. This integration guides the feature propagation throughout the whole network, improving the spatial cohernce and the consistency of the segmentation.
-
 
 
 \section{Training and Optimization Procedures}
