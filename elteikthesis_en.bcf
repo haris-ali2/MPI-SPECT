@@ -2409,6 +2409,7 @@
     <bcf:citekey order="46" intorder="1">10.1007/978-3-031-08999-2_22</bcf:citekey>
     <bcf:citekey order="47" intorder="1">zhou2023nnformer</bcf:citekey>
     <bcf:citekey order="48" intorder="1">10.1007/978-3-031-08999-2_22</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">McInnes2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

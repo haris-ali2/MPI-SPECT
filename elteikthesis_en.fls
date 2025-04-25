@@ -674,6 +674,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT ./samples_en/results.tex
 INPUT ./samples_en/results.tex
 INPUT samples_en/results.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -686,14 +688,6 @@ INPUT ./elteikthesis_en.lot
 INPUT ./elteikthesis_en.lot
 INPUT elteikthesis_en.lot
 OUTPUT elteikthesis_en.lot
-INPUT ./elteikthesis_en.loa
-INPUT ./elteikthesis_en.loa
-INPUT elteikthesis_en.loa
-OUTPUT elteikthesis_en.loa
-INPUT ./elteikthesis_en.lol
-INPUT ./elteikthesis_en.lol
-INPUT elteikthesis_en.lol
-OUTPUT elteikthesis_en.lol
 INPUT elteikthesis_en.aux
 INPUT elteikthesis_en.run.xml
 OUTPUT elteikthesis_en.run.xml

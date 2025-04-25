@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber elteikthesis_en"] 1745530528.74115 "elteikthesis_en.bcf" "elteikthesis_en.bbl" "elteikthesis_en" 1745531173.08052 0
-  "elteikthesis.bib" 1745530306.70823 43878 0f926862f7ead7e4f16b19809ad4d50a ""
-  "elteikthesis_en.bcf" 1745531172.78545 110316 2091ef2f0c5e41eba138febd40d69d4c "pdflatex"
+["biber elteikthesis_en"] 1745588119.45608 "elteikthesis_en.bcf" "elteikthesis_en.bbl" "elteikthesis_en" 1745591579.91869 0
+  "elteikthesis.bib" 1745588118.93637 44260 1734d0c1bcf2f875b6e2cc765d694721 ""
+  "elteikthesis_en.bcf" 1745591579.01702 110383 0d524b7b9bd199a390c72e9d7045baf4 "pdflatex"
   (generated)
   "elteikthesis_en.bbl"
   "elteikthesis_en.blg"
   (rewritten before read)
-["makeindex elteikthesis_en.idx"] 1745528196.23622 "elteikthesis_en.idx" "elteikthesis_en.ind" "elteikthesis_en" 1745531173.08032 0
-  "elteikthesis_en.idx" 1745531169.47341 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex elteikthesis_en.idx"] 1745528196.23622 "elteikthesis_en.idx" "elteikthesis_en.ind" "elteikthesis_en" 1745591579.91816 0
+  "elteikthesis_en.idx" 1745591568.56726 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "elteikthesis_en.ilg"
   "elteikthesis_en.ind"
   (rewritten before read)
-["pdflatex"] 1745531167.77216 "/media/haris/B8401013400FD752/Study/Masters/Thesis/MPI-SPECT/elteikthesis_en.tex" "elteikthesis_en.pdf" "elteikthesis_en" 1745531173.08097 0
+["pdflatex"] 1745591563.89577 "/media/haris/B8401013400FD752/Study/Masters/Thesis/MPI-SPECT/elteikthesis_en.tex" "elteikthesis_en.pdf" "elteikthesis_en" 1745591579.91988 0
   "/etc/texmf/web2c/texmf.cnf" 1744423175.61456 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/media/haris/B8401013400FD752/Study/Masters/Thesis/MPI-SPECT/elteikthesis_en.tex" 1745527620.46444 5174 99a18c19d8d4d5e84fcdc2a225cf20aa ""
+  "/media/haris/B8401013400FD752/Study/Masters/Thesis/MPI-SPECT/elteikthesis_en.tex" 1745591546.13276 4853 3dfd2fe70904fe0cee312659d7355a29 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -24,6 +24,8 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/eccc1200.tfm" 1136768653 3072 1e3dcc56ea731d0f3645bbefe8c8608c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/eccc1440.tfm" 1136768653 3072 f2bcba5ec52607af3501d45108193ff5 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/eccc1728.tfm" 1136768653 3072 4c9b123826d0d85d40f16e82db0803b7 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm" 1136768653 3584 291a5713401683441e0a8c8f4417b17b ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm" 1136768653 3584 49064b465390a8e316a3c8417a050403 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm" 1136768653 3584 f80ddd985bd00e29e9a6047ebd9d4781 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm" 1136768653 3584 3169d30142b88a27d4ab0e3468e963a2 ""
@@ -354,16 +356,14 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1744478730.67954 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1744478944 8215057 e3fe52dddee289a8f529fc30c3a59a60 ""
   "elteikthesis.cls" 1744415616 16743 f1ce4b24869b9877bcaf7b6ec18a216c ""
-  "elteikthesis_en.aux" 1745531172.76445 30858 466eba891758a71b151b100101fa0d4b "pdflatex"
-  "elteikthesis_en.bbl" 1745530530.86922 119431 5a0c6a4f6bba01a15c4b4fa35648087f "biber elteikthesis_en"
+  "elteikthesis_en.aux" 1745591578.94703 32797 f4f59f2504a3ccf368c54b09ffff721d "pdflatex"
+  "elteikthesis_en.bbl" 1745588121.7474 121325 9fc95d32af9244f74bd1c6a821475d0a "biber elteikthesis_en"
   "elteikthesis_en.ind" 1745528196.47903 0 d41d8cd98f00b204e9800998ecf8427e "makeindex elteikthesis_en.idx"
-  "elteikthesis_en.loa" 1745531172.75045 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "elteikthesis_en.lof" 1745531172.78645 336 962e81a72d699d5f057e473e9c7a6893 "pdflatex"
-  "elteikthesis_en.lol" 1745531172.75645 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "elteikthesis_en.lot" 1745531172.78645 585 f1f21525156a328822676a563beac8df "pdflatex"
-  "elteikthesis_en.run.xml" 1745531172.78645 2447 37adbedc9d7051b41559d566e0579763 "pdflatex"
-  "elteikthesis_en.tex" 1745527620.46444 5174 99a18c19d8d4d5e84fcdc2a225cf20aa ""
-  "elteikthesis_en.toc" 1745531172.78645 5033 369229a030145acd3396f1f27ceb98e3 "pdflatex"
+  "elteikthesis_en.lof" 1745591579.02103 336 962e81a72d699d5f057e473e9c7a6893 "pdflatex"
+  "elteikthesis_en.lot" 1745591579.02103 585 f1f21525156a328822676a563beac8df "pdflatex"
+  "elteikthesis_en.run.xml" 1745591579.02103 2447 37adbedc9d7051b41559d566e0579763 "pdflatex"
+  "elteikthesis_en.tex" 1745591546.13276 4853 3dfd2fe70904fe0cee312659d7355a29 ""
+  "elteikthesis_en.toc" 1745591579.02103 5360 91c205f427e0a8da21696b2f251baf05 "pdflatex"
   "images/elte_cimer_szines.pdf" 1744424124.26972 119479 5922249716ebdbdd76a30f753bca2628 ""
   "images/pipeline.tex" 1745526290.4433 1889 2d67063a0d533dffcb86d503ba7fecee ""
   "images/sagittal_gt.png" 1745328574.62529 529 60ccdc5699329f54c0c014d76ef7a821 ""
@@ -371,16 +371,14 @@
   "samples_en/abs.tex" 1744508460.57534 2148 f8d6435f15db84a2493096518d528347 ""
   "samples_en/intro.tex" 1744734196.56854 9471 80e572fd5a2c932fdef4c679ad49c987 ""
   "samples_en/related.tex" 1745189296.01034 10200 765263e9cd94cb533944c249c475eeb5 ""
-  "samples_en/results.tex" 1745531167.22037 5057 a99814d158e91ad243157addf339208c ""
+  "samples_en/results.tex" 1745591470.42553 12277 82dbdb76c499788cd2a03a69d4167db4 ""
   "samples_en/user.tex" 1745528664.89072 38758 5cf40044c1c4c6736a21b4507a28e97b ""
   (generated)
   "elteikthesis_en.aux"
   "elteikthesis_en.bcf"
   "elteikthesis_en.idx"
-  "elteikthesis_en.loa"
   "elteikthesis_en.lof"
   "elteikthesis_en.log"
-  "elteikthesis_en.lol"
   "elteikthesis_en.lot"
   "elteikthesis_en.nlo"
   "elteikthesis_en.pdf"
