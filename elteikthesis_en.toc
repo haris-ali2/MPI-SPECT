@@ -1,6 +1,5 @@
 \select@language {english} \contentsline {chapter}{Declaration}{1}{chapter*.1}%
-\select@language {english} \contentsline {chapter}{Acknowledgements}{2}{chapter*.2}%
-\select@language {english} \contentsline {chapter}{Abstract}{3}{chapter*.3}%
+\select@language {english} \contentsline {chapter}{Abstract}{3}{chapter*.2}%
 \select@language {english} \contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
 \select@language {english} \contentsline {chapter}{\numberline {2}Related Work}{8}{chapter.2}%
 \select@language {english} \contentsline {chapter}{\numberline {3}Methodology}{12}{chapter.3}%
@@ -41,7 +40,8 @@
 \select@language {english} \contentsline {section}{\numberline {4.5}UMAP Embedding of Bottleneck Representations}{34}{section.4.5}%
 \select@language {english} \contentsline {section}{\numberline {4.6}Training with Varying Dataset Sizes}{35}{section.4.6}%
 \select@language {english} \contentsline {section}{\numberline {4.7}Conclusion of Results}{36}{section.4.7}%
-\select@language {english} \contentsline {chapter}{Acknowledgements}{37}{chapter*.6}%
-\select@language {english} \contentsline {chapter}{Bibliography}{37}{section*.7}%
-\select@language {english} \contentsline {chapter}{List of Figures}{44}{section*.9}%
-\select@language {english} \contentsline {chapter}{List of Tables}{45}{section*.10}%
+\select@language {english} \contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}%
+\select@language {english} \contentsline {chapter}{Acknowledgements}{39}{chapter*.5}%
+\select@language {english} \contentsline {chapter}{Bibliography}{39}{section*.6}%
+\select@language {english} \contentsline {chapter}{List of Figures}{46}{section*.8}%
+\select@language {english} \contentsline {chapter}{List of Tables}{47}{section*.9}%
