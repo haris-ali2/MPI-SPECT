@@ -11,7 +11,7 @@ The quantitative analysis of the model on phantoms revealed that the proposed mo
 \section{Quantitative Comparison with Transformer Architectures}
 In order to benchmark the proposed architecture against th state-of-the-art transformer based segmentation models we implemented two relevant and efficiently proved alternatives: nnFormer \cite{zhou2023nnformer} and Swin-UNETR \cite{10.1007/978-3-031-08999-2_22}. All of the models were trined under identical conditions using the same 60 patient training size and the 14 patient validation size in order to ensure a fair comparison between the models. The averaged quantitative results are summarized in Table \ref{tab:quantitative_comparison}. The proposed architecture consistently outperformed both the models for comparison across almost all the evaluation metrics. notably the precision, dice and the Iou score were higher which reflects an enhanced segmentation accuracy and spatial consistency. The one exception was the recall, where Swin-UNetR achieves a slightly higher values due to the consistent oversegmentation trend that is observed over several different samples. This suggests that while Swin-UNetR may be able to capture more positive instances, it does that at the cost of specificity which leads to a higher false positives rate. These results prove that the superior balance that needs to be achieved between the precision and the recall is done by the architecture proposed, which is an extremely important aspect of the clinical segmentation tasks in order to avoid both uner and oversegmentation.
 
-\begin{table}[h!]
+\begin{table}[h!t]
     \begin{tabular}{ |p{2.3cm}|p{2.3cm}|p{2.3cm}|p{2.3cm}|p{2.3cm}|}
             \hline
             \multicolumn{5}{|c|}{Averaged performance metrics} \\
@@ -37,10 +37,12 @@ More in-depth investigatin into the role of SSP was conducted throuh a eature sp
 In order to assess the behaviour of the segmentation model as a classifier-like model, a Receiver Operating Characteristic (ROC) curve was calculated on the test set of the patients, which is shown in fig. 3. ROC is a very welll established method which helps to evaluate the discriminative power of a model. It works by plotting the true possitive rate against the false positive rate across a number of thresholds. An interesting finding is the fact that the curve reveals a small fluctuation in the performance, which a one point dips below the threshold of the random classifier, which is 0.5, after the 0.75 mark. Upon ver close examination of the model, this drop is found to be connected to the  inconsistencies and the imperfections in the ground truth labels which were manualy annotated and hence got subject to inter-observer variabiity.
 
 \begin{equation}
+\addcontentsline{equ}{equations}{\protect\numberline{\theequation}True Positive Rate}
     \text{TPR} = \frac{TP}{TP + FN}
 \end{equation}
     
 \begin{equation}
+    \addcontentsline{equ}{equations}{\protect\numberline{\theequation}False Positive Rate}
     \text{FPR} = \frac{FP}{FP + TN}
 \end{equation}
 

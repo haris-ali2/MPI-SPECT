@@ -35,18 +35,13 @@
 % Add bibliography file
 \addbibresource{elteikthesis.bib}
 
-\usepackage{subcaption}
-\usepackage{xcolor}
-\usepackage{transparent}
-\usepackage{wrapfig}
-\usepackage{hyperref}
 \usepackage{cleveref}
-\usepackage[record,abbreviations,symbols]{glossaries-extra}
 
-\usepackage{tikz}
-\usepackage{tikz-3dplot}
-\usetikzlibrary{math}
-\usepackage{ifthen}
+\usepackage{tocloft}
+
+\newlistof{equations}{equ}{List of Equations}
+\newcommand{\listequationsname}{List of Equations}
+
 
 \usetikzlibrary{positioning, chains, shapes.geometric, fit, shapes, arrows.meta, calc, backgrounds, intersections,shapes.arrows}
 
@@ -135,5 +130,11 @@ In case your thesis received financial support from a project or the university,
 \addcontentsline{toc}{chapter}{\lsttablelabel}
 \listoftables
 \cleardoublepage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Equations}
+\listofequations
+\cleardoublepage
+
 
 \end{document}

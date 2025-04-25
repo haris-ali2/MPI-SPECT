@@ -1,0 +1,10 @@
+\select@language {english} \contentsline {equations}{\numberline {3.1}Statistical Shape Model}{21}{equation.3.1}%
+\select@language {english} \contentsline {equations}{\numberline {3.2}Mahalanobis Distance}{21}{equation.3.2}%
+\select@language {english} \contentsline {equations}{\numberline {3.3}KL Divergence}{22}{equation.3.3}%
+\select@language {english} \contentsline {equations}{\numberline {3.4}Combined Shape Loss}{22}{equation.3.4}%
+\select@language {english} \contentsline {equations}{\numberline {3.5}Dice Coefficient}{27}{equation.3.5}%
+\select@language {english} \contentsline {equations}{\numberline {3.6}Intersection over Union (IoU)}{27}{equation.3.6}%
+\select@language {english} \contentsline {equations}{\numberline {3.7}Precision}{27}{equation.3.7}%
+\select@language {english} \contentsline {equations}{\numberline {3.8}Recall}{27}{equation.3.8}%
+\select@language {english} \contentsline {equations}{\numberline {4.1}True Positive Rate}{34}{equation.4.1}%
+\select@language {english} \contentsline {equations}{\numberline {4.2}False Positive Rate}{34}{equation.4.2}%

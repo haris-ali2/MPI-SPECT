@@ -81,7 +81,10 @@ Tradition DL approaches often rely completely on the pixel-level intensities and
 \subsection{Shape Prior Construction}
 The construction of the SSP begins with the creation of a training set that used a set of annotated LV segmentations. These segmentations are first aligned to a common coordinate system using techniques such as affine or non-rigit registeration. After the alignment, the shape representations are extracted, commonly as binary masks. In this work, the shapes are encoded using contoured vectors in a latent space that is suitabl for probabilistic modeling. Once the shapes are aligned, Principal Component Analysis (PCA) is applied to the shape representations in order to identify the primary modes of variation. This gives out a low-dimentional shape space where each shape can actually be representated as a linear combination of the mean shape and a set of principal components. The statistical model can be expressed as:
 
-\begin{equation} S = \bar{S} + Pb, \end{equation} 
+\begin{equation} 
+\addcontentsline{equ}{equations}{\protect\numberline{\theequation}Statistical Shape Model}
+    S = \bar{S} + Pb, 
+\end{equation} 
 
 where $\bar{S}$ is the mean shape, $P$ is the matrix of principal components, and $b$ is a vector of shape parameters.
 
@@ -90,16 +93,22 @@ The parameters $b$ follow a Gaussian distribution which is estimated from the tr
 \subsection{Regularization Using Mahalanobis Distance}
 In order to integrate the SSP into the learning, a shape regularization term is added to the loss. This term penalize the deviations from the learned shape space using Mahalanobis distance, which is defined as:
 
-\begin{equation} D_M(b) = (b - \mu)^T \Sigma^{-1} (b - \mu), \end{equation}
+\begin{equation} 
+\addcontentsline{equ}{equations}{\protect\numberline{\theequation}Mahalanobis Distance}
+    D_M(b) = (b - \mu)^T \Sigma^{-1} (b - \mu), 
+\end{equation}
 
 where $\mu$ and $\Sigma$ are the mean and covariance of the shape parameters from the training data.
 
 The constraint forces the network to produce output shapes that lie in the distribution of the known shapes. It acts as a force that corrects and guides the model to produce good LV geometries.
 
 \subsection{KL Divergence-Based Optimization}
-In addition to the Mahalanobis distance, a Kullback-Lieber (KL) divergence term is used in order to further align the predicted distribution of shapes with the prior one. The KKL divergence quantifies the difference that exists between the predicted shape distribution $a(b)$ and the prior distribution $p(b)$:
+In addition to the Mahalanobis distance, a Kullback-Lieber (KL) divergence term is used in order to further align the predicted distribution of shapes with the prior one. The KL divergence quantifies the difference that exists between the predicted shape distribution $a(b)$ and the prior distribution $p(b)$:
 
-\begin{equation} D_{KL}(q || p) = \int q(b) \log \left(\frac{q(b)}{p(b)}\right) db. \end{equation}
+\begin{equation} 
+\addcontentsline{equ}{equations}{\protect\numberline{\theequation}KL Divergence}
+    D_{KL}(q || p) = \int q(b) \log \left(\frac{q(b)}{p(b)}\right) db. 
+\end{equation}
 
 This term is particularly useful when traning any probabilistic model such as a variational auroencoder (VAE) in order to learn to generate a whole distribution of anatomical shapes.
 
@@ -108,7 +117,10 @@ The integration of the SSP into the segmentation network follows a specific arch
 
 The process begins with sampling the shape prior from the learned statistical distribution which is conditioned on the features that are derived from the input volume of SPECT. This prios reflects a anatomically likely structure that is aligned with the patient's scan, and selected from a low-dimensional latent shape space. For each of the sampled prior there are two metrics that are calculated The first is the Mahalanobis distance ($D_M$) and the second is the KL divergence ($D_{KL}$), which quantify how well the prior comforms with the expected shape. These metrics are then combined into a single scalar shape prior loss:
 
-\begin{equation} \mathcal{L}{shape} = \lambda_1 D_M + \lambda_2 D{KL}, \end{equation}
+\begin{equation}
+\addcontentsline{equ}{equations}{\protect\numberline{\theequation}Combined Shape Loss} 
+    \mathcal{L}{shape} = \lambda_1 D_M + \lambda_2 D{KL}, 
+\end{equation}
 
 where $\lambda_1$ and $\lambda_2$ are empirically tuned coefficients.
 
@@ -172,24 +184,28 @@ The evaluation of the segmentation performance focused on the following key perf
 \begin{itemize}
     \item \textbf{Dice Similarity Coefficient (DSC):} Measures the overlap between the predicted and ground truth segmentations, defined as:
     \begin{equation}
+    \addcontentsline{equ}{equations}{\protect\numberline{\theequation}Dice Coefficient}
     DSC = \frac{2|P \cap G|}{|P| + |G|},
     \end{equation}
     where $P$ and $G$ denote the predicted and ground truth segmentations, respectively.
     
     \item \textbf{Intersection over Union (IoU):} Provides an alternative measure of overlap, calculated as:
     \begin{equation}
+        \addcontentsline{equ}{equations}{\protect\numberline{\theequation}Intersection over Union (IoU)}
     IoU = \frac{|P \cap G|}{|P \cup G|},
     \end{equation}
     which balances sensitivity and specificity by considering both false positives and false negatives.
     
     \item \textbf{Precision:} Indicates the proportion of predicted positive voxels that are truly positive, defined as:
     \begin{equation}
+        \addcontentsline{equ}{equations}{\protect\numberline{\theequation}Precision}
     Precision = \frac{TP}{TP + FP},
     \end{equation}
     where $TP$ is the number of true positives and $FP$ is the number of false positives. High precision implies fewer false positive segmentations.
     
     \item \textbf{Recall (Sensitivity):} Measures the ability of the model to correctly identify all relevant voxels belonging to the target structure, given by:
     \begin{equation}
+        \addcontentsline{equ}{equations}{\protect\numberline{\theequation}Recall}
     Recall = \frac{TP}{TP + FN},
     \end{equation}
     where $FN$ is the number of false negatives. A high recall value indicates effective capture of the entire structure, even if some false positives occur.
