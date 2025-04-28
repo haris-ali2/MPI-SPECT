@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.12)  28 APR 2025 13:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.12)  28 APR 2025 15:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1376,27 +1376,27 @@ Package pdftex.def Info: ./images/sagittal_gt.png  used on input line 39.
 <images/Encoder.png, id=323, 1028.4021pt x 578.16pt>
 File: images/Encoder.png Graphic file (type png)
 <use images/Encoder.png>
-Package pdftex.def Info: images/Encoder.png  used on input line 60.
+Package pdftex.def Info: images/Encoder.png  used on input line 59.
 (pdftex.def)             Requested size: 426.79135pt x 239.94075pt.
  [18 <./images/Encoder.png>]
 <images/Bottleneck.png, id=331, 1028.4021pt x 578.16pt>
 File: images/Bottleneck.png Graphic file (type png)
 <use images/Bottleneck.png>
-Package pdftex.def Info: images/Bottleneck.png  used on input line 74.
+Package pdftex.def Info: images/Bottleneck.png  used on input line 73.
 (pdftex.def)             Requested size: 426.79135pt x 239.94075pt.
 <images/Decoder.png, id=333, 1028.4021pt x 578.16pt>
 File: images/Decoder.png Graphic file (type png)
 <use images/Decoder.png>
-Package pdftex.def Info: images/Decoder.png  used on input line 86.
+Package pdftex.def Info: images/Decoder.png  used on input line 85.
 (pdftex.def)             Requested size: 426.79135pt x 239.94075pt.
  [19 <./images/Bottleneck.png>] [20 <./images/Decoder.png>]
 <images/Architecture.png, id=346, 1028.4021pt x 578.16pt>
 File: images/Architecture.png Graphic file (type png)
 <use images/Architecture.png>
-Package pdftex.def Info: images/Architecture.png  used on input line 103.
+Package pdftex.def Info: images/Architecture.png  used on input line 102.
 (pdftex.def)             Requested size: 426.79135pt x 239.94075pt.
  [21 <./images/Architecture.png>] [22] [23] [24] [25] [26]
-Underfull \hbox (badness 2573) in paragraph at lines 205--205
+Underfull \hbox (badness 2573) in paragraph at lines 203--203
 []\T1/cmr/bx/n/17.28 Implementation Details and Computational
  []
 
@@ -1426,65 +1426,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--34
 <images/segs/axial_input.png, id=493, 65.043pt x 72.27pt>
 File: images/segs/axial_input.png Graphic file (type png)
 <use images/segs/axial_input.png>
-Package pdftex.def Info: images/segs/axial_input.png  used on input line 65.
+Package pdftex.def Info: images/segs/axial_input.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 104.33334pt.
 <images/segs/axial_gt.png, id=494, 65.043pt x 72.27pt>
 File: images/segs/axial_gt.png Graphic file (type png)
 <use images/segs/axial_gt.png>
-Package pdftex.def Info: images/segs/axial_gt.png  used on input line 65.
+Package pdftex.def Info: images/segs/axial_gt.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 104.33334pt.
 <images/segs/axial_pred.png, id=495, 65.043pt x 72.27pt>
 File: images/segs/axial_pred.png Graphic file (type png)
 <use images/segs/axial_pred.png>
-Package pdftex.def Info: images/segs/axial_pred.png  used on input line 65.
+Package pdftex.def Info: images/segs/axial_pred.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 104.33334pt.
 <images/segs/axial_pred_SP.png, id=496, 65.043pt x 72.27pt>
 File: images/segs/axial_pred_SP.png Graphic file (type png)
 <use images/segs/axial_pred_SP.png>
-Package pdftex.def Info: images/segs/axial_pred_SP.png  used on input line 65.
+Package pdftex.def Info: images/segs/axial_pred_SP.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 104.33334pt.
 <images/segs/coronal_input.png, id=497, 65.043pt x 72.27pt>
 File: images/segs/coronal_input.png Graphic file (type png)
 <use images/segs/coronal_input.png>
-Package pdftex.def Info: images/segs/coronal_input.png  used on input line 65.
+Package pdftex.def Info: images/segs/coronal_input.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 104.33334pt.
 <images/segs/coronal_gt.png, id=498, 65.043pt x 72.27pt>
 File: images/segs/coronal_gt.png Graphic file (type png)
 <use images/segs/coronal_gt.png>
-Package pdftex.def Info: images/segs/coronal_gt.png  used on input line 65.
+Package pdftex.def Info: images/segs/coronal_gt.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 104.33334pt.
 <images/segs/coronal_pred.png, id=499, 65.043pt x 72.27pt>
 File: images/segs/coronal_pred.png Graphic file (type png)
 <use images/segs/coronal_pred.png>
-Package pdftex.def Info: images/segs/coronal_pred.png  used on input line 65.
+Package pdftex.def Info: images/segs/coronal_pred.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 104.33334pt.
 <images/segs/coronal_pred_SP.png, id=500, 65.043pt x 72.27pt>
 File: images/segs/coronal_pred_SP.png Graphic file (type png)
 <use images/segs/coronal_pred_SP.png>
-Package pdftex.def Info: images/segs/coronal_pred_SP.png  used on input line 65.
+Package pdftex.def Info: images/segs/coronal_pred_SP.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 104.33334pt.
 <images/segs/sagittal_input.png, id=501, 72.27pt x 72.27pt>
 File: images/segs/sagittal_input.png Graphic file (type png)
 <use images/segs/sagittal_input.png>
-Package pdftex.def Info: images/segs/sagittal_input.png  used on input line 65.
+Package pdftex.def Info: images/segs/sagittal_input.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 93.89912pt.
 <images/segs/sagittal_gt.png, id=502, 72.27pt x 72.27pt>
 File: images/segs/sagittal_gt.png Graphic file (type png)
 <use images/segs/sagittal_gt.png>
-Package pdftex.def Info: images/segs/sagittal_gt.png  used on input line 65.
+Package pdftex.def Info: images/segs/sagittal_gt.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 93.89912pt.
 <images/segs/sagittal_pred.png, id=503, 72.27pt x 72.27pt>
 File: images/segs/sagittal_pred.png Graphic file (type png)
 <use images/segs/sagittal_pred.png>
-Package pdftex.def Info: images/segs/sagittal_pred.png  used on input line 65.
+Package pdftex.def Info: images/segs/sagittal_pred.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 93.89912pt.
 <images/segs/sagittal_pred_SP.png, id=504, 72.27pt x 72.27pt>
 File: images/segs/sagittal_pred_SP.png Graphic file (type png)
 <use images/segs/sagittal_pred_SP.png>
-Package pdftex.def Info: images/segs/sagittal_pred_SP.png  used on input line 65.
+Package pdftex.def Info: images/segs/sagittal_pred_SP.png  used on input line 63.
 (pdftex.def)             Requested size: 93.8946pt x 93.89912pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
 []\T1/cmr/bx/n/17.28 Receiver Operating Characteristic (ROC)
  []
 
@@ -1492,10 +1492,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--72
 <images/ROC.pdf, id=523, 462.52798pt x 346.89601pt>
 File: images/ROC.pdf Graphic file (type pdf)
 <use images/ROC.pdf>
-Package pdftex.def Info: images/ROC.pdf  used on input line 91.
+Package pdftex.def Info: images/ROC.pdf  used on input line 86.
 (pdftex.def)             Requested size: 426.79135pt x 320.11156pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 []\T1/cmr/bx/n/17.28 UMAP Embedding of Bottleneck
  []
 
@@ -1503,18 +1503,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--96
 <images/Umap_train.pdf, id=535, 463.16035pt x 361.35pt>
 File: images/Umap_train.pdf Graphic file (type pdf)
 <use images/Umap_train.pdf>
-Package pdftex.def Info: images/Umap_train.pdf  used on input line 103.
+Package pdftex.def Info: images/Umap_train.pdf  used on input line 98.
 (pdftex.def)             Requested size: 426.79135pt x 332.97536pt.
 <images/Umap_test.pdf, id=537, 463.16035pt x 361.35pt>
 File: images/Umap_test.pdf Graphic file (type pdf)
 <use images/Umap_test.pdf>
-Package pdftex.def Info: images/Umap_test.pdf  used on input line 115.
+Package pdftex.def Info: images/Umap_test.pdf  used on input line 109.
 (pdftex.def)             Requested size: 426.79135pt x 332.97536pt.
  [38 <./images/ROC.pdf>] [39 <./images/Umap_train.pdf>] [40 <./images/Umap_test.pdf>]
 <images/datasets.jpeg, id=636, 602.25pt x 149.8097pt>
 File: images/datasets.jpeg Graphic file (type jpg)
 <use images/datasets.jpeg>
-Package pdftex.def Info: images/datasets.jpeg  used on input line 128.
+Package pdftex.def Info: images/datasets.jpeg  used on input line 121.
 (pdftex.def)             Requested size: 426.79135pt x 106.16902pt.
 ) [41 <./images/datasets.jpeg>] (./samples_en/conc.tex
 Chapter 5.
@@ -1596,7 +1596,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  124i,13n,145p,3070b,3323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on elteikthesis_en.pdf (55 pages, 1354460 bytes).
+Output written on elteikthesis_en.pdf (55 pages, 1354533 bytes).
 PDF statistics:
  1095 PDF objects out of 1200 (max. 8388607)
  814 compressed objects within 9 object streams
