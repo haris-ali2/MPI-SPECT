@@ -2287,6 +2287,190 @@
       \verb https://arxiv.org/abs/1412.6980
       \endverb
     \endentry
+    \entry{xcat}{article}{}
+      \name{author}{5}{}{%
+        {{hash=bb5e0aa96868e24ff79af0c3f7d1d8b0}{%
+           family={Segars},
+           familyi={S\bibinitperiod},
+           given={W.\bibnamedelimi P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=fcd775c11054edc4f8254b6f670b2f34}{%
+           family={Sturgeon},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=21cf8098f18425fae46f2529168f6c22}{%
+           family={Mendonca},
+           familyi={M\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9323b4a368c47d62c69d542395c23bf4}{%
+           family={Grimes},
+           familyi={G\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3ece164130d232bde6b3f4e11179ba9f}{%
+           family={Tsui},
+           familyi={T\bibinitperiod},
+           given={B.\bibnamedelimi M.\bibnamedelimi W.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{c888eb9342a4e18695c4dfdb50bd1029}
+      \strng{fullhash}{1b212d09ec658d796f5f81fac2457213}
+      \strng{bibnamehash}{c888eb9342a4e18695c4dfdb50bd1029}
+      \strng{authorbibnamehash}{c888eb9342a4e18695c4dfdb50bd1029}
+      \strng{authornamehash}{c888eb9342a4e18695c4dfdb50bd1029}
+      \strng{authorfullhash}{1b212d09ec658d796f5f81fac2457213}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose : The authors develop the 4D extended cardiac-torso (XCAT) phantom for multimodality imaging research. Methods: Highly detailed whole-body anatomies for the adult male and female were defined in the XCAT using nonuniform rational B-spline (NURBS) and subdivision surfaces based on segmentation of the Visible Male and Female anatomical datasets from the National Library of Medicine as well as patient datasets. Using the flexibility of these surfaces, the Visible Human anatomies were transformed to match body measurements and organ volumes for a 50th percentile (height and weight) male and female. The desired body measurements for the models were obtained using thePEOPLESIZE program that contains anthropometric dimensions categorized from 1st to the 99th percentile for US adults. The desired organ volumes were determined from ICRP Publication 89 [ICRP, “Basic anatomical and physiological data for use in radiological protection: reference values,” ICRP Publication 89 (International Commission on Radiological Protection, New York, NY, 2002)]. The male and female anatomies serve as standard templates upon which anatomical variations may be modeled in the XCAT through user-defined parameters. Parametrized models for the cardiac and respiratory motions were also incorporated into the XCAT based on high-resolution cardiac- and respiratory-gated multislice CT data. To demonstrate the usefulness of the phantom, the authors show example simulation studies in PET, SPECT, and CT using publicly available simulation packages. Results: As demonstrated in the pilot studies, the 4D XCAT (which includes thousands of anatomical structures) can produce realistic imaging data when combined with accurate models of the imaging process. With the flexibility of the NURBS surface primitives, any number of different anatomies, cardiac or respiratory motions or patterns, and spatial resolutions can be simulated to perform imaging research. Conclusions: With the ability to produce realistic, predictive 3D and 4D imaging data from populations of normal and abnormal patients under various imaging parameters, the authors conclude that the XCAT provides an important tool in imaging research to evaluate and improve imaging devices and techniques. In the field of x-ray CT, the phantom may also provide the necessary foundation with which to optimize clinical CT applications in terms of image quality versus radiation dose, an area of research that is becoming more significant with the growing use of CT.}
+      \field{journaltitle}{Medical Physics}
+      \field{number}{9}
+      \field{title}{4D XCAT phantom for multimodality imaging research}
+      \field{volume}{37}
+      \field{year}{2010}
+      \field{pages}{4902\bibrangedash 4915}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1118/1.3480985
+      \endverb
+      \verb{eprint}
+      \verb https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1118/1.3480985
+      \endverb
+      \verb{urlraw}
+      \verb https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3480985
+      \endverb
+      \verb{url}
+      \verb https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3480985
+      \endverb
+      \keyw{X-ray imaging,Computed tomography,Positron emission tomography (PET),Single photon emission computed tomography (SPECT),anthropometry,cardiology,computerised tomography,lung,phantoms,pneumodynamics,positron emission tomography,single photon emission computed tomography,splines (mathematics),medical imaging simulation,computer phantom,SPECT,PET,CT,Medical imaging,Anatomy,Heart,Computed tomography,Medical X-ray imaging,Cardiac dynamics,Biomedical modeling,Brain,Lungs,Magnetic resonance imaging}
+    \endentry
+    \entry{10.1007/978-3-031-08999-2_22}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=4a8b0d75ef5dd9aff244bd459eb56921}{%
+           family={Hatamizadeh},
+           familyi={H\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d0968ce3719368d26817f02301e44c29}{%
+           family={Nath},
+           familyi={N\bibinitperiod},
+           given={Vishwesh},
+           giveni={V\bibinitperiod}}}%
+        {{hash=caeb0e5523b56ad22085585d7f65afa4}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Yucheng},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=43bfecf0db835905ffe98dadaa0b057f}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=04c08832941bceae0bfee57a4113dd33}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Holger\bibnamedelima R.},
+           giveni={H\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=40c221ac11c898cb10013b2468fc229b}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Daguang},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=104761e9d71e255ccfbb64d487271cb4}{%
+           family={Crimi},
+           familyi={C\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=492e29a8f843b2425b1ad81806f1307f}{%
+           family={Bakas},
+           familyi={B\bibinitperiod},
+           given={Spyridon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{4e0e6478f86fbf44f0fdf0c69f65846f}
+      \strng{fullhash}{4363c630876b1169e8116033284ea033}
+      \strng{bibnamehash}{4e0e6478f86fbf44f0fdf0c69f65846f}
+      \strng{authorbibnamehash}{4e0e6478f86fbf44f0fdf0c69f65846f}
+      \strng{authornamehash}{4e0e6478f86fbf44f0fdf0c69f65846f}
+      \strng{authorfullhash}{4363c630876b1169e8116033284ea033}
+      \strng{editorbibnamehash}{e43b8719270cf900430c048812961158}
+      \strng{editornamehash}{e43b8719270cf900430c048812961158}
+      \strng{editorfullhash}{e43b8719270cf900430c048812961158}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries}
+      \field{isbn}{978-3-031-08999-2}
+      \field{title}{Swin UNETR: Swin Transformers for Semantic Segmentation of Brain Tumors in MRI Images}
+      \field{year}{2022}
+      \field{pages}{272\bibrangedash 284}
+      \range{pages}{13}
+    \endentry
+    \entry{McInnes2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f3edd0ee6ca72eca5c532b9c1fcee621}{%
+           family={McInnes},
+           familyi={M\bibinitperiod},
+           given={Leland},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2a653f5c3174b96798d6336399101032}{%
+           family={Healy},
+           familyi={H\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=102b0150d17f795d3b5b27c7a313f3f5}{%
+           family={Saul},
+           familyi={S\bibinitperiod},
+           given={Nathaniel},
+           giveni={N\bibinitperiod}}}%
+        {{hash=988e21a88127ef6975160f475020f2ed}{%
+           family={Großberger},
+           familyi={G\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Open Journal}%
+      }
+      \strng{namehash}{3341d13f7f8011d4c09baee830a3a666}
+      \strng{fullhash}{a7710f91d9913a31bcd045b3ec2999be}
+      \strng{bibnamehash}{3341d13f7f8011d4c09baee830a3a666}
+      \strng{authorbibnamehash}{3341d13f7f8011d4c09baee830a3a666}
+      \strng{authornamehash}{3341d13f7f8011d4c09baee830a3a666}
+      \strng{authorfullhash}{a7710f91d9913a31bcd045b3ec2999be}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Open Source Software}
+      \field{number}{29}
+      \field{title}{UMAP: Uniform Manifold Approximation and Projection}
+      \field{volume}{3}
+      \field{year}{2018}
+      \field{pages}{861}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.21105/joss.00861
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.21105/joss.00861
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.21105/joss.00861
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

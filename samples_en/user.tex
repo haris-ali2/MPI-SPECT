@@ -6,7 +6,7 @@ The main goal of the research is to propose a comprehensive and strong method wh
 
 In order to address these challlenges, the proposed research amalgamates advanced approaches in the field of deep learning, more specifically utilizing the transformer based architecture known as nnFormer \cite{10.1109/TIP.2023.3293771}, which is combined with an innovative idea of using statistical shape prios. The nnFormer architecture is chosen because of the ability of it of capturing both the ocal and the global information or contextual relationships in volumetric data as opposed to traditional CNNs which only capture local information. nnFormer leverages the local volume-based (LV-MSA) and the global volume-based (GV-MSA) multi-head self-attention mechanisms very efficiently in a unified method. These modules of the transformer architecture very effectively encode the longg-range dependencies which are extremely important for better segmentation accuracy specifically in medical imaging where they are characterized by indistinct boundaries.
 
-Simultanously, the SSP are merged into the segmentation pipeline in order to improve the anatomical consistency of the model. SSPs provide the DL model with a mathematical model which captures the probabilistic variability off the LV that are derived from the data annotated by experts. This SSP methos employes an advanced technique of optimization such as Mahalanobis distance based regularization and the Kullback-Liebler (KL) divergence in order to refine the segmentation boundaries. This way the outputs of the segmentation model maintain plausibile anatomical outputs, which improves the segmentation accuracy even when the input data is incomplete or ambiguous. The combination of nnFormer and SSP provides us with a novel hybrid architecture. The full architecture pipeline is presented, on an abstract level, in \cref{fig:network_pipeline}.
+Simultanously, the SSP are merged into the segmentation pipeline in order to improve the anatomical consistency of the model. SSPs provide the DL model with a mathematical model which captures the probabilistic variability off the LV that are derived from the data annotated by experts. This SSP methos employes an advanced technique of optimization such as Mahalanobis distance based regularization and the Kullback-Liebler (KL) divergence in order to refine the segmentation boundaries. This way the outputs of the segmentation model maintain plausibile anatomical outputs, which improves the segmentation accuracy even when the input data is incomplete or ambiguous. The combination of nnFormer and SSP provides us with a novel hybrid architecture. The full architecture pipeline is presented, on an abstract level, in \cref{Fig:network_pipeline}.
 
 This hybrid approach leverages not only the strengths of DL models in extracting complex and heirarchical feature representations from volumetric data, but also the advantages of SSPs in mantaining consistent anatomies. This approach also adressess the limitations of the existing methods, which include inefficient generalization capability and dependencies of large, precisely annotated data for training. It also mitigates the impact of a number of different imaging artifacts and the noise, which enhances the overall relaibility on the segmentations.
 
@@ -22,7 +22,7 @@ In a summary, the proposed methodology contibutes to not only a significant adva
 		\input{images/pipeline.tex}
 	}
 	\caption{\centering Network architecture pipeline}
-	\label{fig:network_pipeline}
+	\label{Fig:network_pipeline}
 \end{figure}
 
 \section{Data Acquisition and Preprocessing}
@@ -51,15 +51,42 @@ The nnFormer architecture introduces an innovative advancements in the field of 
 The nnFormer architecture follows a structure that is very much used in the image segmentation field. It follows a U-shaped encoder decoder architecture which is inspired by the widely used U-Net. This choise of the structure helps in efficient learning of the detailed local features, all the while preserving and leveraging the global contexutual information across multiple scales of resolution. The nnFormer architecture comprises of three main components: an encoder, a bottleneck and a decoder which are all interconnected via skip connections.
 
 \subsection{Encoder}
-The encoder of nnFormer starts with an embedding layer, which consists of multiple convolutional layers with very small kernel sizes, typically using 3x3x3. This is followed by Gaussan Error Linear Units (GELU) activation and then ends with a normalization layer. This initial convolutional based embedding transforms the input volume into a higher dimentional featurespace which encodes the low-level spatial detailed, which are necessary for subsequent processing, very efficiently. After the embedding layer, the encoder uses a Local Volume-based Multi-hea Self-attention (LV-MSA) blocks. These LV-MSA blocks are designed so that they can capture the local spatial dependencies within the segmented volumes, which significantly reduces the computaitonal compllexity of the model as compared to the conventional global self-attention mechanisms. 
+The encoder of nnFormer, as shown in \cref{Fig:encoder} starts with an embedding layer, which consists of multiple convolutional layers with very small kernel sizes, typically using 3x3x3. This is followed by Gaussan Error Linear Units (GELU) activation and then ends with a normalization layer. This initial convolutional based embedding transforms the input volume into a higher dimentional featurespace which encodes the low-level spatial detailed, which are necessary for subsequent processing, very efficiently. After the embedding layer, the encoder uses a Local Volume-based Multi-hea Self-attention (LV-MSA) blocks. These LV-MSA blocks are designed so that they can capture the local spatial dependencies within the segmented volumes, which significantly reduces the computaitonal compllexity of the model as compared to the conventional global self-attention mechanisms. 
+
+\begin{figure}[htb!]  % Changed from figure* to figure unless you specifically need double-column
+    \centering
+    % \begin{subfigure}[b]{1.5\textwidth} 
+	\centering
+	\includegraphics[width=1\textwidth]{images/Encoder.png}
+	\caption{\centering Encoder of nnFormer}
+	\label{Fig:encoder}
+\end{figure}
 
 Each of the LV-MSA blocks is further comprised of successive layers of transformer modules in order to use attention mechanisms to effectively model the ver intricate local intractions contexxually. The encoder also combines very strategically placed downsampling convolutional layers which reduces the spatial dimensions of the feature maps while at the same time progressively increasing the depth of the feature map. This downsampling process helps the extraction of the heirarchical features in a more abstract way and on a global scale based representations at lower resolutions, which are essential for capturing the borader variations and anatomical structures.
 
 \subsection{Bottleneck}
-In the center of the nnFormer there is a bottleneck. This bottleneck has global volume-based multi-head self-attention (GV-MSA) mechanisms. Contrary to the LV-MSA, the GV-MSA provides with a significantly bigger receptive field which captures the long-range dependencies across the whole global context of the volumetric feature map. This increased area of the receptive field is essential at this stage in order to allow the network to achieve a comprehensive understanding of the global representation and the anatomical structures, improving the overall segmentation accuracy. The bottleneck very effectively combines the compllex spatial dependencies and also the high level features which are exracted by the encoder. Thi serves as a robust foundation for the decoder for accurate and consistent output during the decoding.
+In the center of the nnFormer there is a bottleneck ,shown in \cref{Fig:bottleneck}. This bottleneck has global volume-based multi-head self-attention (GV-MSA) mechanisms. Contrary to the LV-MSA, the GV-MSA provides with a significantly bigger receptive field which captures the long-range dependencies across the whole global context of the volumetric feature map. This increased area of the receptive field is essential at this stage in order to allow the network to achieve a comprehensive understanding of the global representation and the anatomical structures, improving the overall segmentation accuracy. The bottleneck very effectively combines the compllex spatial dependencies and also the high level features which are exracted by the encoder. Thi serves as a robust foundation for the decoder for accurate and consistent output during the decoding.
+
+\begin{figure}[htb!]  % Changed from figure* to figure unless you specifically need double-column
+    \centering
+    % \begin{subfigure}[b]{1.5\textwidth} 
+	\centering
+	\includegraphics[width=1\textwidth]{images/Bottleneck.png}
+	\caption{\centering Bottleneck of nnFormer}
+	\label{Fig:bottleneck}
+\end{figure}
 
 \subsection{Decoder}
-The decoder is, in a way, mirrored version of the encoder it also employs LV-MSA blocks but coupled with convolutional upsampling, instead of the downsampling, or so-called transposed convolution. This restores the spatial resolution of the feature maps gradually to the original dimenstions of the input. Each step of the upsampling process in the decoder is designed so as to reconstruct the detailed anatomical information by combining the high resolution detail captured sptially from the corresponding encoding stages via skip connections. 
+The decoder, in \cref{Fig:decoder} is, in a way, mirrored version of the encoder it also employs LV-MSA blocks but coupled with convolutional upsampling, instead of the downsampling, or so-called transposed convolution. This restores the spatial resolution of the feature maps gradually to the original dimenstions of the input. Each step of the upsampling process in the decoder is designed so as to reconstruct the detailed anatomical information by combining the high resolution detail captured sptially from the corresponding encoding stages via skip connections. 
+
+\begin{figure}[htb!]  % Changed from figure* to figure unless you specifically need double-column
+    \centering
+    % \begin{subfigure}[b]{1.5\textwidth} 
+	\centering
+	\includegraphics[width=1\textwidth]{images/Decoder.png}
+	\caption{\centering Decoder of nnFormer}
+	\label{Fig:decoder}
+\end{figure}
 
 A prime innovation of the nnFormer is the use of the skip attention mechanisms, in place of he traditional concatenation or summation which is typically used in skip connection mechanisms. These skip connections very selectively integrates the features of the encoder with the corresponding features of the decoder, which are guided by the attention weights that highlight relevant spatial features dynamically and hence suppress the irrelevant features. This selective combinaton majorly improves the precision of the segmentation, specifically in the areas where the clear anatomical delineation is very challenging due to the noise and artifacts.
 
@@ -67,8 +94,16 @@ A prime innovation of the nnFormer is the use of the skip attention mechanisms, 
 nnFormerutilizes two different types of attention mechanisms: the Local Volume-based Multi-head Self-attention (LV-MSA) and Global Volume-based Multi-head Self-attention (GV-MSA). LV-MSA very effficiently models the local spatial dependencies by partitioning the feature maps into manageable patches of volumes, which reduces the computational complexity without sacrificing a lot of the performance of the attention mechanism. In contrast to this, GV-MSA models the global interactions spatially across the entire volumetric feature maps, which are essential for capturing the large scale anatomical structural integrity and the contextual relationships. Both of thse attention mechanisms use multi-head configurations which enable parallel computations of attention across multiple representational subspaces. This multi-ha design greatly improves the capability of the network in order to concurrently capture very diverse spatiall relationships and the interactions at multiple scales hence thereby improving the segmentation accuracy.
 
 \subsection{Integration and Optimization}
-The amalgamation of LV-MSA, GV-MSA and the convolutional operations in the nnFormer is very carefully optimized in order to leverage the strength of each of these methods. The convolutional layers provide the efficient encoding of the low level spatual features, while the LV-MSA and the GV-MSA collectively capture both the complex spatial contexts and the long-range dependencies which are crucial for the precise and robust segmentaiton. Optimization of the nnFormer involves a specialized loss function called the Dice cross entropy loss (DiceCELoss). This loss function objectivises a high segmentation accuracy while maintaining a reliable realisic plausibility, which effectively guides the learning process towards more generalizable models acrosss diverse imaging conditions.
+The amalgamation of LV-MSA, GV-MSA and the convolutional operations in the nnFormer is very carefully optimized in order to leverage the strength of each of these methods. The convolutional layers provide the efficient encoding of the low level spatual features, while the LV-MSA and the GV-MSA collectively capture both the complex spatial contexts and the long-range dependencies which are crucial for the precise and robust segmentaiton, providing us with the overall nnFormer architecture shown in \cref{Fig:nnformer}. Optimization of the nnFormer involves a specialized loss function called the Dice cross entropy loss (DiceCELoss). This loss function objectivises a high segmentation accuracy while maintaining a reliable realisic plausibility, which effectively guides the learning process towards more generalizable models acrosss diverse imaging conditions.
 
+\begin{figure}[htb!]  
+    \centering
+    % \begin{subfigure}[b]{1.5\textwidth} 
+	\centering
+	\includegraphics[width=1\textwidth]{images/Architecture.png}
+	\caption{\centering Full nnFormer architecture}
+	\label{Fig:nnformer}
+\end{figure}
 
 In conclusion, the nnFormer architecture represents a very sophisticated segmentation framework which is specifically tailored for medical imaging systems. The innovative design of the architecture and the advaned methods of attention overcomes the traditional limiations of segmentation models by effectively using optimization techniques across components ensuring accurate, robust and clinically meaningfull segmentation outputs.
 

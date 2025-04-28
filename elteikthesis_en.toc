@@ -9,40 +9,40 @@
 \select@language {english} \contentsline {subsection}{\numberline {3.3.1}Overall Architecture}{17}{subsection.3.3.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.2}Encoder}{17}{subsection.3.3.2}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.3}Bottleneck}{18}{subsection.3.3.3}%
-\select@language {english} \contentsline {subsection}{\numberline {3.3.4}Decoder}{18}{subsection.3.3.4}%
-\select@language {english} \contentsline {subsection}{\numberline {3.3.5}Attention Mechanisms}{19}{subsection.3.3.5}%
-\select@language {english} \contentsline {subsection}{\numberline {3.3.6}Integration and Optimization}{19}{subsection.3.3.6}%
-\select@language {english} \contentsline {section}{\numberline {3.4}Statistical Shape Priors}{20}{section.3.4}%
-\select@language {english} \contentsline {subsection}{\numberline {3.4.1}Motivation for SSPs}{20}{subsection.3.4.1}%
-\select@language {english} \contentsline {subsection}{\numberline {3.4.2}Shape Prior Construction}{21}{subsection.3.4.2}%
-\select@language {english} \contentsline {subsection}{\numberline {3.4.3}Regularization Using Mahalanobis Distance}{21}{subsection.3.4.3}%
-\select@language {english} \contentsline {subsection}{\numberline {3.4.4}KL Divergence-Based Optimization}{22}{subsection.3.4.4}%
-\select@language {english} \contentsline {subsection}{\numberline {3.4.5}Integration into the Segmentation Network}{22}{subsection.3.4.5}%
-\select@language {english} \contentsline {section}{\numberline {3.5}Training and Optimization Procedures}{23}{section.3.5}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.1}Training Dataset and Splits}{23}{subsection.3.5.1}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.2}Data Augmentation}{23}{subsection.3.5.2}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.3}Loss Function}{24}{subsection.3.5.3}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.4}Optimization Strategy}{24}{subsection.3.5.4}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.5}Evaluation Pipeline}{25}{subsection.3.5.5}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.6}Implementation Environment}{25}{subsection.3.5.6}%
-\select@language {english} \contentsline {section}{\numberline {3.6}Implementation Details and Computational Environment}{25}{section.3.6}%
-\select@language {english} \contentsline {subsection}{\numberline {3.6.1}Software Framework}{26}{subsection.3.6.1}%
-\select@language {english} \contentsline {subsection}{\numberline {3.6.2}Hardware Infrastructure}{26}{subsection.3.6.2}%
-\select@language {english} \contentsline {section}{\numberline {3.7}Evaluation Metrics and Experimental Setup}{26}{section.3.7}%
-\select@language {english} \contentsline {subsection}{\numberline {3.7.1}Evaluation Metrics}{27}{subsection.3.7.1}%
-\select@language {english} \contentsline {subsection}{\numberline {3.7.2}Experimental Protocols}{28}{subsection.3.7.2}%
-\select@language {english} \contentsline {section}{\numberline {3.8}Summary and Justification of Methodology}{28}{section.3.8}%
-\select@language {english} \contentsline {chapter}{\numberline {4}Results}{31}{chapter.4}%
-\select@language {english} \contentsline {section}{\numberline {4.1}Evaluation on Synthetic Phantom Data}{31}{section.4.1}%
-\select@language {english} \contentsline {section}{\numberline {4.2}Quantitative Comparison with Transformer Architectures}{32}{section.4.2}%
-\select@language {english} \contentsline {section}{\numberline {4.3}Effectiveness of Shape Priors on Anatomical Conformance}{33}{section.4.3}%
-\select@language {english} \contentsline {section}{\numberline {4.4}Receiver Operating Characteristic (ROC) Analysis}{33}{section.4.4}%
-\select@language {english} \contentsline {section}{\numberline {4.5}UMAP Embedding of Bottleneck Representations}{34}{section.4.5}%
-\select@language {english} \contentsline {section}{\numberline {4.6}Training with Varying Dataset Sizes}{35}{section.4.6}%
-\select@language {english} \contentsline {section}{\numberline {4.7}Conclusion of Results}{36}{section.4.7}%
-\select@language {english} \contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}%
-\select@language {english} \contentsline {chapter}{Acknowledgements}{39}{chapter*.5}%
-\select@language {english} \contentsline {chapter}{Bibliography}{39}{section*.6}%
-\select@language {english} \contentsline {chapter}{List of Figures}{46}{section*.8}%
-\select@language {english} \contentsline {chapter}{List of Tables}{47}{section*.9}%
-\select@language {english} \contentsline {chapter}{List of Equations}{48}{section*.10}%
+\select@language {english} \contentsline {subsection}{\numberline {3.3.4}Decoder}{19}{subsection.3.3.4}%
+\select@language {english} \contentsline {subsection}{\numberline {3.3.5}Attention Mechanisms}{20}{subsection.3.3.5}%
+\select@language {english} \contentsline {subsection}{\numberline {3.3.6}Integration and Optimization}{21}{subsection.3.3.6}%
+\select@language {english} \contentsline {section}{\numberline {3.4}Statistical Shape Priors}{22}{section.3.4}%
+\select@language {english} \contentsline {subsection}{\numberline {3.4.1}Motivation for SSPs}{22}{subsection.3.4.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.4.2}Shape Prior Construction}{22}{subsection.3.4.2}%
+\select@language {english} \contentsline {subsection}{\numberline {3.4.3}Regularization Using Mahalanobis Distance}{23}{subsection.3.4.3}%
+\select@language {english} \contentsline {subsection}{\numberline {3.4.4}KL Divergence-Based Optimization}{23}{subsection.3.4.4}%
+\select@language {english} \contentsline {subsection}{\numberline {3.4.5}Integration into the Segmentation Network}{24}{subsection.3.4.5}%
+\select@language {english} \contentsline {section}{\numberline {3.5}Training and Optimization Procedures}{25}{section.3.5}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.1}Training Dataset and Splits}{25}{subsection.3.5.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.2}Data Augmentation}{25}{subsection.3.5.2}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.3}Loss Function}{25}{subsection.3.5.3}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.4}Optimization Strategy}{26}{subsection.3.5.4}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.5}Evaluation Pipeline}{26}{subsection.3.5.5}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.6}Implementation Environment}{27}{subsection.3.5.6}%
+\select@language {english} \contentsline {section}{\numberline {3.6}Implementation Details and Computational Environment}{27}{section.3.6}%
+\select@language {english} \contentsline {subsection}{\numberline {3.6.1}Software Framework}{27}{subsection.3.6.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.6.2}Hardware Infrastructure}{28}{subsection.3.6.2}%
+\select@language {english} \contentsline {section}{\numberline {3.7}Evaluation Metrics and Experimental Setup}{28}{section.3.7}%
+\select@language {english} \contentsline {subsection}{\numberline {3.7.1}Evaluation Metrics}{28}{subsection.3.7.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.7.2}Experimental Protocols}{29}{subsection.3.7.2}%
+\select@language {english} \contentsline {section}{\numberline {3.8}Summary and Justification of Methodology}{30}{section.3.8}%
+\select@language {english} \contentsline {chapter}{\numberline {4}Results}{32}{chapter.4}%
+\select@language {english} \contentsline {section}{\numberline {4.1}Evaluation on Synthetic Phantom Data}{32}{section.4.1}%
+\select@language {english} \contentsline {section}{\numberline {4.2}Quantitative Comparison with Transformer Architectures}{34}{section.4.2}%
+\select@language {english} \contentsline {section}{\numberline {4.3}Effectiveness of Shape Priors on Anatomical Conformance}{35}{section.4.3}%
+\select@language {english} \contentsline {section}{\numberline {4.4}Receiver Operating Characteristic (ROC) Analysis}{36}{section.4.4}%
+\select@language {english} \contentsline {section}{\numberline {4.5}UMAP Embedding of Bottleneck Representations}{36}{section.4.5}%
+\select@language {english} \contentsline {section}{\numberline {4.6}Training with Varying Dataset Sizes}{38}{section.4.6}%
+\select@language {english} \contentsline {section}{\numberline {4.7}Conclusion of Results}{40}{section.4.7}%
+\select@language {english} \contentsline {chapter}{\numberline {5}Conclusion}{41}{chapter.5}%
+\select@language {english} \contentsline {chapter}{Acknowledgements}{43}{chapter*.15}%
+\select@language {english} \contentsline {chapter}{Bibliography}{43}{section*.16}%
+\select@language {english} \contentsline {chapter}{List of Figures}{50}{section*.18}%
+\select@language {english} \contentsline {chapter}{List of Tables}{51}{section*.19}%
+\select@language {english} \contentsline {chapter}{List of Equations}{52}{section*.20}%
