@@ -2,9 +2,9 @@
 \select@language {english} \contentsline {equations}{\numberline {3.2}Mahalanobis Distance}{23}{equation.3.2}%
 \select@language {english} \contentsline {equations}{\numberline {3.3}KL Divergence}{23}{equation.3.3}%
 \select@language {english} \contentsline {equations}{\numberline {3.4}Combined Shape Loss}{24}{equation.3.4}%
-\select@language {english} \contentsline {equations}{\numberline {3.5}Dice Coefficient}{28}{equation.3.5}%
-\select@language {english} \contentsline {equations}{\numberline {3.6}Intersection over Union (IoU)}{29}{equation.3.6}%
-\select@language {english} \contentsline {equations}{\numberline {3.7}Precision}{29}{equation.3.7}%
-\select@language {english} \contentsline {equations}{\numberline {3.8}Recall}{29}{equation.3.8}%
-\select@language {english} \contentsline {equations}{\numberline {4.1}True Positive Rate}{36}{equation.4.1}%
-\select@language {english} \contentsline {equations}{\numberline {4.2}False Positive Rate}{36}{equation.4.2}%
+\select@language {english} \contentsline {equations}{\numberline {3.6}Dice Coefficient}{29}{equation.3.6}%
+\select@language {english} \contentsline {equations}{\numberline {3.7}Intersection over Union (IoU)}{29}{equation.3.7}%
+\select@language {english} \contentsline {equations}{\numberline {3.8}Precision}{29}{equation.3.8}%
+\select@language {english} \contentsline {equations}{\numberline {3.9}Recall}{30}{equation.3.9}%
+\select@language {english} \contentsline {equations}{\numberline {4.1}True Positive Rate}{37}{equation.4.1}%
+\select@language {english} \contentsline {equations}{\numberline {4.2}False Positive Rate}{37}{equation.4.2}%

@@ -183,6 +183,12 @@ The dice component of the loss function directly optimizes the function for the 
 
 This hybrid loss is proved to be both differentiable and computaitonally efficient, with facilitates stable convergence during the training process. This loss was selected over te traditional single term losses due to the fact that its robustness in handling small, complex anatomical data even in the presence of noise. By relying completely on the the DiceCELoss, the training pipeline remains completely stremlined and very effective, which eliminates the need for additional tuning of the hyperparameters that is associated with the multi-loss formulations.
 
+\begin{equation}
+    \text{DiceCELoss} = \left( 1 - \frac{2 \sum_{i} p_i g_i}{\sum_{i} p_i + \sum_{i} g_i} \right) - \sum_{i} g_i \log(p_i)
+\end{equation}
+
+In the above formulation, \( p_i \) represents the predicted probability for voxel \( i \), while \( g_i \) denotes the corresponding ground truth label, which is typically binary. The index \( i \) runs over all voxels (or pixels) in the image or volume. In the case of multi-class segmentation, the formulation extends to include an additional class index \( c \), where \( p_{i,c} \) indicates the predicted probability that voxel \( i \) belongs to class \( c \), and \( g_{i,c} \) is the one-hot encoded ground truth label for voxel \( i \) with respect to class \( c \). The terms \( \sum_i p_i \) and \( \sum_i g_i \) represent the total predicted and ground truth positive volumes, respectively, while \( \sum_i p_i g_i \) measures the overlap between prediction and ground truth. The cross-entropy component, \( \sum_i g_i \log(p_i) \), quantifies the voxel-wise classification error by penalizing deviations between predicted probabilities and ground truth labels. Together, the Dice coefficient term and the Cross-Entropy loss term jointly capture both region-level overlap and voxel-level classification confidence, promoting accurate and stable segmentation outputs.
+
 \subsection{Optimization Strategy}
 Model training used the Adam optimizer \cite{Kingma2015Adam} with the following configuration:
 

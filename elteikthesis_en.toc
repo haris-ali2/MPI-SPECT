@@ -22,27 +22,27 @@
 \select@language {english} \contentsline {subsection}{\numberline {3.5.1}Training Dataset and Splits}{25}{subsection.3.5.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.5.2}Data Augmentation}{25}{subsection.3.5.2}%
 \select@language {english} \contentsline {subsection}{\numberline {3.5.3}Loss Function}{25}{subsection.3.5.3}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.4}Optimization Strategy}{26}{subsection.3.5.4}%
-\select@language {english} \contentsline {subsection}{\numberline {3.5.5}Evaluation Pipeline}{26}{subsection.3.5.5}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.4}Optimization Strategy}{27}{subsection.3.5.4}%
+\select@language {english} \contentsline {subsection}{\numberline {3.5.5}Evaluation Pipeline}{27}{subsection.3.5.5}%
 \select@language {english} \contentsline {subsection}{\numberline {3.5.6}Implementation Environment}{27}{subsection.3.5.6}%
-\select@language {english} \contentsline {section}{\numberline {3.6}Implementation Details and Computational Environment}{27}{section.3.6}%
-\select@language {english} \contentsline {subsection}{\numberline {3.6.1}Software Framework}{27}{subsection.3.6.1}%
+\select@language {english} \contentsline {section}{\numberline {3.6}Implementation Details and Computational Environment}{28}{section.3.6}%
+\select@language {english} \contentsline {subsection}{\numberline {3.6.1}Software Framework}{28}{subsection.3.6.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.6.2}Hardware Infrastructure}{28}{subsection.3.6.2}%
-\select@language {english} \contentsline {section}{\numberline {3.7}Evaluation Metrics and Experimental Setup}{28}{section.3.7}%
-\select@language {english} \contentsline {subsection}{\numberline {3.7.1}Evaluation Metrics}{28}{subsection.3.7.1}%
-\select@language {english} \contentsline {subsection}{\numberline {3.7.2}Experimental Protocols}{29}{subsection.3.7.2}%
-\select@language {english} \contentsline {section}{\numberline {3.8}Summary and Justification of Methodology}{30}{section.3.8}%
-\select@language {english} \contentsline {chapter}{\numberline {4}Results}{32}{chapter.4}%
-\select@language {english} \contentsline {section}{\numberline {4.1}Evaluation on Synthetic Phantom Data}{32}{section.4.1}%
-\select@language {english} \contentsline {section}{\numberline {4.2}Quantitative Comparison with Transformer Architectures}{34}{section.4.2}%
-\select@language {english} \contentsline {section}{\numberline {4.3}Effectiveness of Shape Priors on Anatomical Conformance}{35}{section.4.3}%
-\select@language {english} \contentsline {section}{\numberline {4.4}Receiver Operating Characteristic (ROC) Analysis}{36}{section.4.4}%
-\select@language {english} \contentsline {section}{\numberline {4.5}UMAP Embedding of Bottleneck Representations}{36}{section.4.5}%
-\select@language {english} \contentsline {section}{\numberline {4.6}Training with Varying Dataset Sizes}{38}{section.4.6}%
-\select@language {english} \contentsline {section}{\numberline {4.7}Conclusion of Results}{40}{section.4.7}%
-\select@language {english} \contentsline {chapter}{\numberline {5}Conclusion}{41}{chapter.5}%
-\select@language {english} \contentsline {chapter}{Acknowledgements}{43}{chapter*.15}%
-\select@language {english} \contentsline {chapter}{Bibliography}{43}{section*.16}%
-\select@language {english} \contentsline {chapter}{List of Figures}{50}{section*.18}%
-\select@language {english} \contentsline {chapter}{List of Tables}{51}{section*.19}%
-\select@language {english} \contentsline {chapter}{List of Equations}{52}{section*.20}%
+\select@language {english} \contentsline {section}{\numberline {3.7}Evaluation Metrics and Experimental Setup}{29}{section.3.7}%
+\select@language {english} \contentsline {subsection}{\numberline {3.7.1}Evaluation Metrics}{29}{subsection.3.7.1}%
+\select@language {english} \contentsline {subsection}{\numberline {3.7.2}Experimental Protocols}{30}{subsection.3.7.2}%
+\select@language {english} \contentsline {section}{\numberline {3.8}Summary and Justification of Methodology}{31}{section.3.8}%
+\select@language {english} \contentsline {chapter}{\numberline {4}Results}{33}{chapter.4}%
+\select@language {english} \contentsline {section}{\numberline {4.1}Evaluation on Synthetic Phantom Data}{33}{section.4.1}%
+\select@language {english} \contentsline {section}{\numberline {4.2}Quantitative Comparison with Transformer Architectures}{35}{section.4.2}%
+\select@language {english} \contentsline {section}{\numberline {4.3}Effectiveness of Shape Priors on Anatomical Conformance}{36}{section.4.3}%
+\select@language {english} \contentsline {section}{\numberline {4.4}Receiver Operating Characteristic (ROC) Analysis}{37}{section.4.4}%
+\select@language {english} \contentsline {section}{\numberline {4.5}UMAP Embedding of Bottleneck Representations}{37}{section.4.5}%
+\select@language {english} \contentsline {section}{\numberline {4.6}Training with Varying Dataset Sizes}{39}{section.4.6}%
+\select@language {english} \contentsline {section}{\numberline {4.7}Conclusion of Results}{41}{section.4.7}%
+\select@language {english} \contentsline {chapter}{\numberline {5}Conclusion}{42}{chapter.5}%
+\select@language {english} \contentsline {chapter}{Acknowledgements}{44}{chapter*.15}%
+\select@language {english} \contentsline {chapter}{Bibliography}{44}{section*.16}%
+\select@language {english} \contentsline {chapter}{List of Figures}{51}{section*.18}%
+\select@language {english} \contentsline {chapter}{List of Tables}{52}{section*.19}%
+\select@language {english} \contentsline {chapter}{List of Equations}{53}{section*.20}%
