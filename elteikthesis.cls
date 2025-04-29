@@ -395,7 +395,7 @@
 \RequirePackage[autostyle=true]{csquotes}
 \RequirePackage[
 	backend=biber,
-	style=numeric, % style of bibliography
+	style=ieee, % style of bibliography
 	sorting=none   % sorting of references
 ]{biblatex}
 % ------------------------------

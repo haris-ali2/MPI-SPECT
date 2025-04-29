@@ -55,9 +55,13 @@
       <file>biblatex.def</file>
       <file>standard.bbx</file>
       <file>numeric.bbx</file>
-      <file>numeric.cbx</file>
+      <file>numeric-comp.bbx</file>
+      <file>ieee.bbx</file>
+      <file>numeric-comp.cbx</file>
+      <file>ieee.cbx</file>
       <file>biblatex.cfg</file>
       <file>magyar.lbx</file>
+      <file>magyar-ieee.lbx</file>
       <file>hungarian.lbx</file>
       <file>english.lbx</file>
     </requires>

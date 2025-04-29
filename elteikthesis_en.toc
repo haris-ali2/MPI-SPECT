@@ -12,7 +12,7 @@
 \select@language {english} \contentsline {subsection}{\numberline {3.3.4}Decoder}{19}{subsection.3.3.4}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.5}Attention Mechanisms}{20}{subsection.3.3.5}%
 \select@language {english} \contentsline {subsection}{\numberline {3.3.6}Integration and Optimization}{21}{subsection.3.3.6}%
-\select@language {english} \contentsline {section}{\numberline {3.4}Statistical Shape Priors}{22}{section.3.4}%
+\select@language {english} \contentsline {section}{\numberline {3.4}Statistical Shape Prior}{22}{section.3.4}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.1}Motivation for SSPs}{22}{subsection.3.4.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.2}Shape Prior Construction}{22}{subsection.3.4.2}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.3}Regularization Using Mahalanobis Distance}{23}{subsection.3.4.3}%
@@ -43,6 +43,6 @@
 \select@language {english} \contentsline {chapter}{\numberline {5}Conclusion}{42}{chapter.5}%
 \select@language {english} \contentsline {chapter}{Acknowledgements}{44}{chapter*.15}%
 \select@language {english} \contentsline {chapter}{Bibliography}{44}{section*.16}%
-\select@language {english} \contentsline {chapter}{List of Figures}{51}{section*.18}%
-\select@language {english} \contentsline {chapter}{List of Tables}{52}{section*.19}%
-\select@language {english} \contentsline {chapter}{List of Equations}{53}{section*.20}%
+\select@language {english} \contentsline {chapter}{List of Figures}{52}{section*.18}%
+\select@language {english} \contentsline {chapter}{List of Tables}{53}{section*.19}%
+\select@language {english} \contentsline {chapter}{List of Equations}{54}{section*.20}%
