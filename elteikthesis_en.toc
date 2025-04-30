@@ -16,7 +16,7 @@
 \select@language {english} \contentsline {subsection}{\numberline {3.4.1}Motivation for SSPs}{22}{subsection.3.4.1}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.2}Shape Prior Construction}{22}{subsection.3.4.2}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.3}Regularization Using Mahalanobis Distance}{23}{subsection.3.4.3}%
-\select@language {english} \contentsline {subsection}{\numberline {3.4.4}KL Divergence-Based Optimization}{23}{subsection.3.4.4}%
+\select@language {english} \contentsline {subsection}{\numberline {3.4.4}\gls {kl} Divergence-Based Optimization}{23}{subsection.3.4.4}%
 \select@language {english} \contentsline {subsection}{\numberline {3.4.5}Integration into the Segmentation Network}{24}{subsection.3.4.5}%
 \select@language {english} \contentsline {section}{\numberline {3.5}Training and Optimization Procedures}{25}{section.3.5}%
 \select@language {english} \contentsline {subsection}{\numberline {3.5.1}Training Dataset and Splits}{25}{subsection.3.5.1}%

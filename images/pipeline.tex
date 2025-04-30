@@ -19,7 +19,12 @@
 \node[shapenode, left=of preprocess, xshift=-1cm] (shape) {Statistical Shape Model};
 % \draw[arrow] (shape) -- (priors);
 % \draw[arrow, dashed] (input.west) -- ++(-6cm,0) |-  (shape.north);
-\draw[arrow, dashed] (input.west) -- ++(-6cm,0) coordinate (temp) -- (temp|-shape.north) -- (shape.north);
+% \draw[arrow, dashed] (input.west) -- ++(-6cm,0) coordinate (temp) -- (temp|-shape.north) -- (shape.north);
+\coordinate (temp) at ($(input.west) + (-6.05cm, 0)$);
+\coordinate (drop) at ($(shape.north) + (-0cm, 0.1)$);
+
+\draw[arrow, dashed] (input.west) -- (temp) -- (drop) -- (shape.north);
+
 
 % Transformer Encoder
 \node[block, below=of preprocess] (encoder) {nnFormer Encoder};

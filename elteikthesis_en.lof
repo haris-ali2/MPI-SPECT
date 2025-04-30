@@ -10,7 +10,7 @@
 \select@language {english} \contentsline {figure}{\numberline {4.1}{\ignorespaces \centering Metric values against Noise in phantoms}}{34}{figure.caption.8}%
 \select@language {english} \contentsline {figure}{\numberline {4.2}{\ignorespaces Segmentation results, the first column depicts the source \gls {lv} volume, the second column is the ground truth labels. The third column shows the best performant competing model the nnFormer and the last is the proposed model's predicted \gls {lv} labels}}{36}{figure.caption.10}%
 \select@language {english} \contentsline {figure}{\numberline {4.3}{\ignorespaces \centering ROC curve on test data}}{38}{figure.caption.11}%
-\select@language {english} \contentsline {figure}{\numberline {4.4}{\ignorespaces \centering UMAP bottleneck feature representation on training data}}{39}{figure.caption.12}%
-\select@language {english} \contentsline {figure}{\numberline {4.5}{\ignorespaces \centering UMAP bottleneck feature representation on testing data}}{40}{figure.caption.13}%
+\select@language {english} \contentsline {figure}{\numberline {4.4}{\ignorespaces \centering \gls {umap} bottleneck feature representation on training data}}{39}{figure.caption.12}%
+\select@language {english} \contentsline {figure}{\numberline {4.5}{\ignorespaces \centering \gls {umap} bottleneck feature representation on testing data}}{40}{figure.caption.13}%
 \select@language {english} \contentsline {figure}{\numberline {4.6}{\ignorespaces \centering Evaluation metric variation based on dataset size}}{41}{figure.caption.14}%
 \select@language {english} \addvspace {10\p@ }
